@@ -78,13 +78,12 @@ def preprocessing(img,winsize=21,winconstant=5,maxarea = 500.0):
 
     return thresh,boundRect
     
-def drawbbox(img,bbox):
+def drawbbox(img,results):
     # Draw the bounding boxes on the (copied) input image:
     img = cv.cvtColor(img,cv.COLOR_GRAY2RGB)
-    for i in range(len(bbox)):
+    for bbox,_,_ in results:
         color = (0, 255, 0)
-        cv.rectangle(img, (int(bbox[i][0]), int(bbox[i][1])), 
-                (int(bbox[i][0] + bbox[i][2]), int(bbox[i][1] + bbox[i][3])), color, 2)
+        cv.rectangle(img, bbox[0],bbox[2], color, 2)
     return img
 
 def ocr(img,langs,gpu):
@@ -111,7 +110,11 @@ def build_model(states,actions):
     model.add(Dense(actions, activation='linear'))
 
     return model
-    
+
+def transfer_model():
+    #Add a transfer learning model from easyocr here
+    pass
+
 class CustomProcessor(Processor):
     '''
     acts as a coupling mechanism between the agent and the environment

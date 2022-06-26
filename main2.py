@@ -3,7 +3,7 @@ from Helper import *
 from gym import Env
 from gym.spaces import Discrete, Box
 import random
-link = 'Resources/sample.png'
+link = 'Resources/sample2.png'
 langs = ['en']
 gpu = False
 
@@ -21,6 +21,10 @@ class pdfread(Env):
 		self.windex = 0
 		self.cindex = 0
 		self.c_results = 0
+
+		# draw the bbox and save image
+		bbox_img = drawbbox(self.img,self.results)
+		plt.imsave('box_img.png',bbox_img)
 		
 
 	def step(self,action):
@@ -51,7 +55,7 @@ class pdfread(Env):
 			text = cleanup_text(text)
             
 			# Bounding box for individual characters
-			cropped_img = pad(cv.resize(cropped_img,(cropped_img.shape[1]*10,cropped_img.shape[0]*10),interpolation = cv.INTER_LINEAR),330,3300)
+			cropped_img = pad(cv.resize(cropped_img,(cropped_img.shape[1]*5,cropped_img.shape[0]*5),interpolation = cv.INTER_LINEAR),330,3300)
 		
 			return cropped_img,bbox,text
 		# check whether the episode is finished
@@ -84,6 +88,7 @@ class pdfread(Env):
 
 	def render(self):
 		# i don't need to render any visual
+		# display action, current state (pic + text) and reward
 		pass
 
 	def reset(self):
@@ -108,7 +113,7 @@ model.summary()
 
 dqn = build_agent(model, actions)
 dqn.compile(Adam(lr=1e-3), metrics=['mae'])
-dqn.fit(env, nb_steps=10000, visualize=False, verbose=1)
+dqn.fit(env, nb_steps=1000, visualize=False, verbose=1)
 
 
 
