@@ -8,6 +8,8 @@ from custom_example import Model
 from easyocr import Reader
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Flatten, Conv2D, MaxPooling2D, Input
+from tensorflow.keras.applications.xception import Xception
+from tensorflow.keras.applications.xception import preprocess_input
 from tensorflow.keras.optimizers import Adam
 from rl.agents import DQNAgent
 from rl.policy import BoltzmannQPolicy
@@ -114,28 +116,25 @@ def build_model(states,actions):
 
     return model
 
-def transfer_model():
-    #Add a transfer learning model from easyocr here
-    # load model (keep everything same as an ordinary model except output is basic alphabet and a space)
-    model = Model(input_channel=1,output_channel=256,hidden_size=256,num_class=27)
-    model_params = torch.load('Model/english_g2.pth',map_location='cpu')
+def transfer_model(states,action):
+    base_model = Xception(weights="imagenet", include_top=False, input_shape=states)
+    base_model.trainable = False ## Not trainable weights
 
-    mp = OrderedDict()
-    for key,values in model_params.items():
-        key = key.replace('module.','')
-        mp[key] = values
-        # print(f"{key}: {values.shape}")
-    mp['Prediction.weight'] = torch.randn((27, 256)) * 0.01
-    mp['Prediction.bias'] = torch.zeros(27)
-    model.load_state_dict(mp)
 
-    # change the prediction layer
-    # Disable training on all layers except the final prediction layer
-    for param in model.parameters():
-            param.requires_grad = False
-    for param in model.Prediction.parameters():
-            param.requires_grad = True
+    flatten_layer = Flatten()
+    dense_layer_1 = Dense(30, activation='relu')
+    dense_layer_2 = Dense(30, activation='relu')
+    prediction_layer = Dense(action, activation='softmax')
 
+
+    model = Sequential([
+        base_model,
+        flatten_layer,
+        dense_layer_1,
+        dense_layer_2,
+        prediction_layer
+    ])
+   
     return model
 
 class CustomProcessor(Processor):
@@ -148,7 +147,9 @@ class CustomProcessor(Processor):
         return batch
 
 processor = CustomProcessor()
+
 def build_agent(model, actions):
+    model.summary()
     policy = BoltzmannQPolicy()
     memory = SequentialMemory(limit=50000, window_length=1)
     dqn = DQNAgent(model=model, memory=memory, policy=policy,processor=processor,

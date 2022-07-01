@@ -6,12 +6,12 @@ import random
 link = 'Resources/sample2.png'
 langs = ['en']
 gpu = False
-
+in_shape = [66,660,1]
 
 class pdfread(Env):
 	def __init__(self,link):
-		self.action_space = Discrete(26)
-		self.observation_space = Box(low=0, high=255, shape=(330,3300,1,))
+		self.action_space = Discrete(27)
+		self.observation_space = Box(low=0, high=255, shape=in_shape)
 
 		# start state
 		self.state = np.ones([330,3300,1], dtype=np.uint8)
@@ -55,7 +55,7 @@ class pdfread(Env):
 			text = cleanup_text(text)
             
 			# Bounding box for individual characters
-			cropped_img = pad(cv.resize(cropped_img,(cropped_img.shape[1]*5,cropped_img.shape[0]*5),interpolation = cv.INTER_LINEAR),330,3300)
+			cropped_img = pad(cv.resize(cropped_img,(cropped_img.shape[1],cropped_img.shape[0]),interpolation = cv.INTER_LINEAR),in_shape[0],in_shape[1])
 		
 			return cropped_img,bbox,text
 		# check whether the episode is finished
@@ -93,7 +93,7 @@ class pdfread(Env):
 
 	def reset(self):
 		# reset states
-		self.state = np.ones([330,3300,1], dtype=np.uint8)
+		self.state = np.ones(in_shape, dtype=np.uint8)
 		self.img = cv.imread(link,cv.IMREAD_GRAYSCALE)
 		self.results = ocr(self.img,['en'],False)
 		self.windex = 0
@@ -108,42 +108,10 @@ actions = env.action_space.n
 print(f"Size of states: {states}")
 print(f"Number of actions: {actions}")
 
-model = build_model(states,actions)
-model.summary()
+model = transfer_model()
+# model.summary()
 
 dqn = build_agent(model, actions)
 dqn.compile(Adam(lr=1e-3), metrics=['mae'])
 dqn.fit(env, nb_steps=1000, visualize=False, verbose=1)
 
-
-
-
-
-
-# # load image
-# img = cv.imread(link, cv.IMREAD_GRAYSCALE)
-
-# #OCR on initial image
-# ocr_results = ocr(img,langs,gpu)
-# # loop over the words
-# for (bbox, text, prob) in ocr_results:
-
-#     # unpack the bounding box
-#     (tl, tr, br, bl) = bbox
-#     tl = (int(tl[0]), int(tl[1]))
-#     tr = (int(tr[0]), int(tr[1]))
-#     br = (int(br[0]), int(br[1]))
-#     bl = (int(bl[0]), int(bl[1]))
-
-#     cropped_img = img[tl[1]:br[1], tl[0]:br[0]]
-#     # cleanup the text and draw the box surrounding the text along with the OCR'd text itself
-#     text = cleanup_text(text)
-
-#     # Bounding box for individual characters
-#     cropped_img = cv.adaptiveThreshold(cropped_img, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY, 21,5)
-#     cropped_img = pad(cv.resize(cropped_img,(cropped_img.shape[1]*10,cropped_img.shape[0]*10),interpolation = cv.INTER_LINEAR),330,3300)
-
-# # show the output image
-# plt.figure(figsize=(15,15))
-# plt.imshow(cropped_img)
-# plt.show()

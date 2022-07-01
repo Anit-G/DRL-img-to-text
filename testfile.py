@@ -1,31 +1,26 @@
-from pyexpat import model
-import cv2 as cv
-from Helper import preprocessing, postprocess
-import matplotlib.pyplot as plt
-from custom_example import Model
-# from easyocr.model.model import Model
-from collections import OrderedDict
-import torch
-import torchvision
+from tensorflow.keras.applications.xception import Xception
+from tensorflow.keras.applications.xception import preprocess_input
+from tensorflow.keras import layers, models
 
-# load model (keep everything same as an ordinary model except output is basic alphabet and a space)
-model = Model(input_channel=1,output_channel=256,hidden_size=256,num_class=27)
-model_params = torch.load('Model/english_g2.pth',map_location='cpu')
+# define base model
+states = [150,150,3]
+actions = 27
+base_model = Xception(weights="imagenet", include_top=False, input_shape=states)
+base_model.trainable = False ## Not trainable weights
 
-mp = OrderedDict()
-for key,values in model_params.items():
-    key = key.replace('module.','')
-    mp[key] = values
-    # print(f"{key}: {values.shape}")
-mp['Prediction.weight'] = torch.randn((27, 256)) * 0.01
-mp['Prediction.bias'] = torch.zeros(27)
-model.load_state_dict(mp)
 
-# change the prediction layer
-# Disable training on all layers except the final prediction layer
-for param in model.parameters():
-        param.requires_grad = False
-for param in model.Prediction.parameters():
-        param.requires_grad = True
-print(model)
+flatten_layer = layers.Flatten()
+dense_layer_1 = layers.Dense(30, activation='relu')
+dense_layer_2 = layers.Dense(30, activation='relu')
+prediction_layer = layers.Dense(actions, activation='softmax')
 
+
+model = models.Sequential([
+    base_model,
+    flatten_layer,
+    dense_layer_1,
+    dense_layer_2,
+    prediction_layer
+])
+
+model.summary()
