@@ -55,6 +55,7 @@ class pdfread(Env):
 			text = cleanup_text(text)
             
 			# Bounding box for individual characters
+			print(f"Shape of words: {cropped_img.shape}")
 			cropped_img = pad(cv.resize(cropped_img,(cropped_img.shape[1],cropped_img.shape[0]),interpolation = cv.INTER_LINEAR),in_shape[0],in_shape[1])
 		
 			return cropped_img,bbox,text

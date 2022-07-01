@@ -2,9 +2,6 @@
 from platform import processor
 import numpy as np
 import cv2 as cv
-import torch
-from collections import OrderedDict
-from custom_example import Model
 from easyocr import Reader
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Flatten, Conv2D, MaxPooling2D, Input
