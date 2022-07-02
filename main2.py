@@ -6,7 +6,7 @@ import random
 link = 'Resources/sample2.png'
 langs = ['en']
 gpu = False
-in_shape = [66,660,1]
+in_shape = [72,220,3]
 
 class pdfread(Env):
 	def __init__(self,link):
@@ -14,7 +14,7 @@ class pdfread(Env):
 		self.observation_space = Box(low=0, high=255, shape=in_shape)
 
 		# start state
-		self.state = np.ones([330,3300,1], dtype=np.uint8)
+		self.state = np.ones(in_shape, dtype=np.uint8)
 		self.img = cv.imread(link,cv.IMREAD_GRAYSCALE)
 		# self.img = cv.imread(link)
 		self.results = ocr(self.img,['en'],False)
@@ -55,7 +55,6 @@ class pdfread(Env):
 			text = cleanup_text(text)
             
 			# Bounding box for individual characters
-			print(f"Shape of words: {cropped_img.shape}")
 			cropped_img = pad(cv.resize(cropped_img,(cropped_img.shape[1],cropped_img.shape[0]),interpolation = cv.INTER_LINEAR),in_shape[0],in_shape[1])
 		
 			return cropped_img,bbox,text
@@ -68,7 +67,13 @@ class pdfread(Env):
 		w_img,wbbox,text = characterR(self.results,self.windex,self.img)	
 
 		# define the state that is going to the model
-		self.state = np.expand_dims(w_img,axis=2)
+		input_img = np.zeros(in_shape)
+		input_img[:,:,0] = w_img
+		input_img[:,:,1] = w_img
+		input_img[:,:,2] = w_img
+		# input_img = np.expand_dims(input_img,axis=2)
+		# print(f"State shape:{input_img.shape} ")
+		self.state = input_img
 		
         #  reward based on the previous action
 		reward = get_reward(action,text,self.cindex)
@@ -109,10 +114,14 @@ actions = env.action_space.n
 print(f"Size of states: {states}")
 print(f"Number of actions: {actions}")
 
-model = transfer_model()
-# model.summary()
+model = transfer_model(states, actions)
+model.summary()
 
 dqn = build_agent(model, actions)
 dqn.compile(Adam(lr=1e-3), metrics=['mae'])
-dqn.fit(env, nb_steps=1000, visualize=False, verbose=1)
+dqn.fit(env, nb_steps=50000, visualize=False, verbose=1)
 
+dqn.save_weights('dqn_weights.h5f',overwrite=True)
+scores = dqn.test(env,nb_episodes=100,visualize=False)
+print(np.mean(scores.history['episode_reward']))
+_ = dqn.test(env, nb_episodes=15, visualize=True)

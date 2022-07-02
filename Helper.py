@@ -16,9 +16,9 @@ from rl.core import Processor
 def get_reward(action,text,index):
     text = [ord(x) - 96 for x in text]
     if action+1 == text[index]:
-        reward = 1
+        reward = 10
     else:
-        reward = 0
+        reward = -1
     return reward
 
 def cleanup_text(text):
@@ -146,7 +146,6 @@ class CustomProcessor(Processor):
 processor = CustomProcessor()
 
 def build_agent(model, actions):
-    model.summary()
     policy = BoltzmannQPolicy()
     memory = SequentialMemory(limit=50000, window_length=1)
     dqn = DQNAgent(model=model, memory=memory, policy=policy,processor=processor,
