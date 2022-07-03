@@ -23,7 +23,13 @@ log = logging.getLogger()
  
 # Setting the threshold of logger to DEBUG
 log.setLevel(logging.DEBUG)
- 
+
+def convertint(bbox):
+    num=[]
+    for x in bbox:
+        x = list(map(int,x))
+        num.append(x)
+    return num
 
 def get_reward(action,text,index):
     # convert text to integers
@@ -100,6 +106,7 @@ def drawbbox(img,results):
     img = cv.cvtColor(img,cv.COLOR_GRAY2RGB)
     for bbox,_,_ in results:
         color = (0, 255, 0)
+        bbox = convertint(bbox)
         cv.rectangle(img, bbox[0],bbox[2], color, 2)
     return img
 
@@ -138,7 +145,7 @@ def transfer_model(states,action):
     flatten_layer = Flatten()
     dense_layer_1 = Dense(30, activation='relu')
     dense_layer_2 = Dense(30, activation='relu')
-    prediction_layer = Dense(action, activation='softmax')
+    prediction_layer = Dense(action, activation='linear')
 
 
     model = Sequential([

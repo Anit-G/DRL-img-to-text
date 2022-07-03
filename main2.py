@@ -4,11 +4,11 @@ from gym import Env
 from gym.spaces import Discrete, Box
 import random
 
-link = 'Resources/sample2.png'
+link = 'Resources/sample3.png'
 langs = ['en']
 gpu = True
-in_shape = [72,220,3]
-Train = False
+in_shape = [72,250,3]
+Train = True
 
 class pdfread(Env):
 	def __init__(self,link):
@@ -21,6 +21,7 @@ class pdfread(Env):
 		self.img = cv.imread(link,cv.IMREAD_GRAYSCALE)
 		# self.img = cv.imread(link)
 		self.results = ocr(self.img,['en'],False)
+		
 		self.windex = 0
 		self.cindex = 0
 		self.c_results = 0
@@ -138,7 +139,7 @@ if __name__ == "__main__":
 	dqn.compile(Adam(lr=1e-3), metrics=['mae'])
 	if Train:
 		# train model
-		dqn.fit(env, nb_steps=10000, visualize=False, verbose=1)
+		dqn.fit(env, nb_steps=20000, visualize=False, verbose=1)
 		dqn.save_weights('Weights/dqn_weights.h5f',overwrite=True)
 		scores = dqn.test(env,nb_episodes=1,visualize=False)
 		print(np.mean(scores.history['episode_reward']))
@@ -147,8 +148,6 @@ if __name__ == "__main__":
 		# load weights
 		print('Loading Weights')
 		dqn.load_weights('Weights/dqn_weights.h5f')
-		scores = dqn.test(env,nb_episodes=1,visualize=False)
+		scores = dqn.test(env,nb_episodes=10,visualize=False)
 		print(np.mean(scores.history['episode_reward']))
-		print(env.all_test_actions)
-
 
