@@ -3,14 +3,17 @@ from Helper import *
 from gym import Env
 from gym.spaces import Discrete, Box
 import random
+
 link = 'Resources/sample2.png'
 langs = ['en']
-gpu = False
+gpu = True
 in_shape = [72,220,3]
+Train = False
 
 class pdfread(Env):
 	def __init__(self,link):
-		self.action_space = Discrete(27)
+		log.info('Initialize Enviornment')
+		self.action_space = Discrete(26)
 		self.observation_space = Box(low=0, high=255, shape=in_shape)
 
 		# start state
@@ -21,13 +24,14 @@ class pdfread(Env):
 		self.windex = 0
 		self.cindex = 0
 		self.c_results = 0
-
+		self.all_test_actions = []
 		# draw the bbox and save image
 		bbox_img = drawbbox(self.img,self.results)
 		plt.imsave('box_img.png',bbox_img)
 		
 
 	def step(self,action):
+		
 		def characterR(result,w_index,img):
 			"""
 			Arguments: 
@@ -58,11 +62,17 @@ class pdfread(Env):
 			cropped_img = pad(cv.resize(cropped_img,(cropped_img.shape[1],cropped_img.shape[0]),interpolation = cv.INTER_LINEAR),in_shape[0],in_shape[1])
 		
 			return cropped_img,bbox,text
+
+
 		# check whether the episode is finished
 		if len(self.results)-1 == self.windex:
 			done = True
 		else:
 			done = False
+
+		#saving action space:
+		if not Train:
+			self.all_test_actions.append(action)
 
 		w_img,wbbox,text = characterR(self.results,self.windex,self.img)	
 
@@ -71,25 +81,29 @@ class pdfread(Env):
 		input_img[:,:,0] = w_img
 		input_img[:,:,1] = w_img
 		input_img[:,:,2] = w_img
+
 		# input_img = np.expand_dims(input_img,axis=2)
 		# print(f"State shape:{input_img.shape} ")
 		self.state = input_img
 		
         #  reward based on the previous action
+		log.info('Logging State information:')
+		log.info(f'Current action: {action}, Current word: {text}, current character: {self.cindex}')
 		reward = get_reward(action,text,self.cindex)
 
 		#update index
 		if self.cindex == len(text)-1:
-			print(f'[INFO] Moving to next word, (previous index): {self.windex}')
+			log.info(f'[INFO] Moving to next word: Current word: {text}, (Current index): {self.windex}')
 			self.cindex = 0
 			self.windex+=1
+			plt.imsave(f"words/{text}.jpg",w_img)
 		else:	
 			#update character index
 			self.cindex +=1
 		
 		# placeholder used for diagnosis may contain probabilites
 		info = {}
-
+		
 		return self.state, reward, done, info
 
 	def render(self):
@@ -107,21 +121,34 @@ class pdfread(Env):
 		self.c_results = 0
 		return self.state
 
-env = pdfread(link=link)
-states = env.observation_space.shape
-actions = env.action_space.n
 
-print(f"Size of states: {states}")
-print(f"Number of actions: {actions}")
+if __name__ == "__main__":
 
-model = transfer_model(states, actions)
-model.summary()
+	env = pdfread(link=link)
+	states = env.observation_space.shape
+	actions = env.action_space.n
 
-dqn = build_agent(model, actions)
-dqn.compile(Adam(lr=1e-3), metrics=['mae'])
-dqn.fit(env, nb_steps=50000, visualize=False, verbose=1)
+	print(f"Size of states: {states}")
+	print(f"Number of actions: {actions}")
 
-dqn.save_weights('dqn_weights.h5f',overwrite=True)
-scores = dqn.test(env,nb_episodes=100,visualize=False)
-print(np.mean(scores.history['episode_reward']))
-_ = dqn.test(env, nb_episodes=15, visualize=True)
+	model = transfer_model(states, actions)
+	model.summary()
+
+	dqn = build_agent(model, actions)
+	dqn.compile(Adam(lr=1e-3), metrics=['mae'])
+	if Train:
+		# train model
+		dqn.fit(env, nb_steps=10000, visualize=False, verbose=1)
+		dqn.save_weights('Weights/dqn_weights.h5f',overwrite=True)
+		scores = dqn.test(env,nb_episodes=1,visualize=False)
+		print(np.mean(scores.history['episode_reward']))
+		# _ = dqn.test(env, nb_episodes=15, visualize=True)
+	else:
+		# load weights
+		print('Loading Weights')
+		dqn.load_weights('Weights/dqn_weights.h5f')
+		scores = dqn.test(env,nb_episodes=1,visualize=False)
+		print(np.mean(scores.history['episode_reward']))
+		print(env.all_test_actions)
+
+

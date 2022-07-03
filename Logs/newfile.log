@@ -1,0 +1,1383 @@
+2022-07-03 17:33:46,974 Initialize Enviornment
+2022-07-03 17:33:46,979 [INFO] OCR input image---
+2022-07-03 17:33:46,979 Using CPU. Note: This module is much faster with a GPU.
+2022-07-03 17:33:53,388 Drawing boxes for ([[227, 39], [367, 39], [367, 75], [227, 75]], 'HIJKLMN', 0.9990733922684232)
+2022-07-03 17:33:53,873 Building with transfer learned xception model
+2022-07-03 17:33:55,032 From D:\Seimens\Project 1 2D to 3D\DRL img-to-text\ovr\lib\site-packages\keras\layers\normalization\batch_normalization.py:514: _colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2022-07-03 17:34:01,043 Building agent
+2022-07-03 17:34:07,914 [INFO] OCR input image---
+2022-07-03 17:34:07,914 Using CPU. Note: This module is much faster with a GPU.
+2022-07-03 17:34:18,154 Logging State information:
+2022-07-03 17:34:18,154 Current action: 0, Current word: abcdef, current character: 0
+2022-07-03 17:34:18,154 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:18,169 Logging State information:
+2022-07-03 17:34:18,169 Current action: 0, Current word: abcdef, current character: 1
+2022-07-03 17:34:18,169 Reward function (-1): action = 1, character = 2
+2022-07-03 17:34:18,184 Logging State information:
+2022-07-03 17:34:18,184 Current action: 0, Current word: abcdef, current character: 2
+2022-07-03 17:34:18,184 Reward function (-1): action = 1, character = 3
+2022-07-03 17:34:18,199 Logging State information:
+2022-07-03 17:34:18,199 Current action: 0, Current word: abcdef, current character: 3
+2022-07-03 17:34:18,199 Reward function (-1): action = 1, character = 4
+2022-07-03 17:34:18,212 Logging State information:
+2022-07-03 17:34:18,212 Current action: 0, Current word: abcdef, current character: 4
+2022-07-03 17:34:18,212 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:18,225 Logging State information:
+2022-07-03 17:34:18,225 Current action: 0, Current word: abcdef, current character: 5
+2022-07-03 17:34:18,225 Reward function (-1): action = 1, character = 6
+2022-07-03 17:34:18,225 [INFO] Moving to next word: Current word: abcdef, (Current index): 0
+2022-07-03 17:34:18,240 Logging State information:
+2022-07-03 17:34:18,240 Current action: 0, Current word: hijklmn, current character: 0
+2022-07-03 17:34:18,240 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:18,254 Logging State information:
+2022-07-03 17:34:18,254 Current action: 0, Current word: hijklmn, current character: 1
+2022-07-03 17:34:18,254 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:18,269 Logging State information:
+2022-07-03 17:34:18,269 Current action: 0, Current word: hijklmn, current character: 2
+2022-07-03 17:34:18,269 Reward function (-1): action = 1, character = 10
+2022-07-03 17:34:18,283 Logging State information:
+2022-07-03 17:34:18,284 Current action: 0, Current word: hijklmn, current character: 3
+2022-07-03 17:34:18,284 Reward function (-1): action = 1, character = 11
+2022-07-03 17:34:18,298 Logging State information:
+2022-07-03 17:34:18,298 Current action: 0, Current word: hijklmn, current character: 4
+2022-07-03 17:34:18,298 Reward function (-1): action = 1, character = 12
+2022-07-03 17:34:18,313 Logging State information:
+2022-07-03 17:34:18,313 Current action: 0, Current word: hijklmn, current character: 5
+2022-07-03 17:34:18,313 Reward function (-1): action = 1, character = 13
+2022-07-03 17:34:18,327 Logging State information:
+2022-07-03 17:34:18,327 Current action: 0, Current word: hijklmn, current character: 6
+2022-07-03 17:34:18,327 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:18,327 [INFO] Moving to next word: Current word: hijklmn, (Current index): 1
+2022-07-03 17:34:18,342 Logging State information:
+2022-07-03 17:34:18,342 Current action: 0, Current word: pqrst, current character: 0
+2022-07-03 17:34:18,342 Reward function (-1): action = 1, character = 16
+2022-07-03 17:34:18,356 Logging State information:
+2022-07-03 17:34:18,356 Current action: 0, Current word: pqrst, current character: 1
+2022-07-03 17:34:18,356 Reward function (-1): action = 1, character = 17
+2022-07-03 17:34:18,370 Logging State information:
+2022-07-03 17:34:18,370 Current action: 0, Current word: pqrst, current character: 2
+2022-07-03 17:34:18,370 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:18,384 Logging State information:
+2022-07-03 17:34:18,384 Current action: 0, Current word: pqrst, current character: 3
+2022-07-03 17:34:18,384 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:18,399 Logging State information:
+2022-07-03 17:34:18,399 Current action: 0, Current word: pqrst, current character: 4
+2022-07-03 17:34:18,399 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:18,399 [INFO] Moving to next word: Current word: pqrst, (Current index): 2
+2022-07-03 17:34:18,416 Logging State information:
+2022-07-03 17:34:18,416 Current action: 0, Current word: vwxyz, current character: 0
+2022-07-03 17:34:18,416 Reward function (-1): action = 1, character = 22
+2022-07-03 17:34:18,430 Logging State information:
+2022-07-03 17:34:18,430 Current action: 0, Current word: vwxyz, current character: 1
+2022-07-03 17:34:18,430 Reward function (-1): action = 1, character = 23
+2022-07-03 17:34:18,447 Logging State information:
+2022-07-03 17:34:18,447 Current action: 0, Current word: vwxyz, current character: 2
+2022-07-03 17:34:18,447 Reward function (-1): action = 1, character = 24
+2022-07-03 17:34:18,461 Logging State information:
+2022-07-03 17:34:18,461 Current action: 0, Current word: vwxyz, current character: 3
+2022-07-03 17:34:18,461 Reward function (-1): action = 1, character = 25
+2022-07-03 17:34:18,476 Logging State information:
+2022-07-03 17:34:18,476 Current action: 0, Current word: vwxyz, current character: 4
+2022-07-03 17:34:18,476 Reward function (-1): action = 1, character = 26
+2022-07-03 17:34:18,476 [INFO] Moving to next word: Current word: vwxyz, (Current index): 3
+2022-07-03 17:34:18,490 Logging State information:
+2022-07-03 17:34:18,491 Current action: 0, Current word: this, current character: 0
+2022-07-03 17:34:18,491 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:18,505 Logging State information:
+2022-07-03 17:34:18,505 Current action: 0, Current word: this, current character: 1
+2022-07-03 17:34:18,505 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:18,518 Logging State information:
+2022-07-03 17:34:18,519 Current action: 0, Current word: this, current character: 2
+2022-07-03 17:34:18,519 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:18,532 Logging State information:
+2022-07-03 17:34:18,532 Current action: 0, Current word: this, current character: 3
+2022-07-03 17:34:18,532 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:18,532 [INFO] Moving to next word: Current word: this, (Current index): 4
+2022-07-03 17:34:18,548 Logging State information:
+2022-07-03 17:34:18,548 Current action: 0, Current word: report, current character: 0
+2022-07-03 17:34:18,548 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:18,562 Logging State information:
+2022-07-03 17:34:18,562 Current action: 0, Current word: report, current character: 1
+2022-07-03 17:34:18,562 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:18,576 Logging State information:
+2022-07-03 17:34:18,576 Current action: 0, Current word: report, current character: 2
+2022-07-03 17:34:18,576 Reward function (-1): action = 1, character = 16
+2022-07-03 17:34:18,589 Logging State information:
+2022-07-03 17:34:18,589 Current action: 0, Current word: report, current character: 3
+2022-07-03 17:34:18,590 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:18,604 Logging State information:
+2022-07-03 17:34:18,604 Current action: 0, Current word: report, current character: 4
+2022-07-03 17:34:18,604 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:18,618 Logging State information:
+2022-07-03 17:34:18,619 Current action: 0, Current word: report, current character: 5
+2022-07-03 17:34:18,619 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:18,619 [INFO] Moving to next word: Current word: report, (Current index): 5
+2022-07-03 17:34:18,634 Logging State information:
+2022-07-03 17:34:18,634 Current action: 0, Current word: is, current character: 0
+2022-07-03 17:34:18,634 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:18,648 Logging State information:
+2022-07-03 17:34:18,648 Current action: 0, Current word: is, current character: 1
+2022-07-03 17:34:18,648 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:18,648 [INFO] Moving to next word: Current word: is, (Current index): 6
+2022-07-03 17:34:18,664 Logging State information:
+2022-07-03 17:34:18,664 Current action: 0, Current word: nothing, current character: 0
+2022-07-03 17:34:18,664 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:18,678 Logging State information:
+2022-07-03 17:34:18,678 Current action: 0, Current word: nothing, current character: 1
+2022-07-03 17:34:18,678 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:18,693 Logging State information:
+2022-07-03 17:34:18,693 Current action: 0, Current word: nothing, current character: 2
+2022-07-03 17:34:18,693 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:18,708 Logging State information:
+2022-07-03 17:34:18,708 Current action: 0, Current word: nothing, current character: 3
+2022-07-03 17:34:18,708 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:18,723 Logging State information:
+2022-07-03 17:34:18,723 Current action: 0, Current word: nothing, current character: 4
+2022-07-03 17:34:18,723 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:18,737 Logging State information:
+2022-07-03 17:34:18,737 Current action: 0, Current word: nothing, current character: 5
+2022-07-03 17:34:18,737 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:18,751 Logging State information:
+2022-07-03 17:34:18,751 Current action: 0, Current word: nothing, current character: 6
+2022-07-03 17:34:18,751 Reward function (-1): action = 1, character = 7
+2022-07-03 17:34:18,751 [INFO] Moving to next word: Current word: nothing, (Current index): 7
+2022-07-03 17:34:18,768 Logging State information:
+2022-07-03 17:34:18,768 Current action: 0, Current word: more, current character: 0
+2022-07-03 17:34:18,768 Reward function (-1): action = 1, character = 13
+2022-07-03 17:34:18,782 Logging State information:
+2022-07-03 17:34:18,782 Current action: 0, Current word: more, current character: 1
+2022-07-03 17:34:18,782 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:18,796 Logging State information:
+2022-07-03 17:34:18,796 Current action: 0, Current word: more, current character: 2
+2022-07-03 17:34:18,796 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:18,811 Logging State information:
+2022-07-03 17:34:18,811 Current action: 0, Current word: more, current character: 3
+2022-07-03 17:34:18,811 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:18,811 [INFO] Moving to next word: Current word: more, (Current index): 8
+2022-07-03 17:34:18,826 Logging State information:
+2022-07-03 17:34:18,826 Current action: 0, Current word: than, current character: 0
+2022-07-03 17:34:18,826 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:18,843 Logging State information:
+2022-07-03 17:34:18,843 Current action: 0, Current word: than, current character: 1
+2022-07-03 17:34:18,843 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:18,857 Logging State information:
+2022-07-03 17:34:18,857 Current action: 0, Current word: than, current character: 2
+2022-07-03 17:34:18,857 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:18,871 Logging State information:
+2022-07-03 17:34:18,872 Current action: 0, Current word: than, current character: 3
+2022-07-03 17:34:18,872 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:18,872 [INFO] Moving to next word: Current word: than, (Current index): 9
+2022-07-03 17:34:18,886 Logging State information:
+2022-07-03 17:34:18,886 Current action: 0, Current word: a, current character: 0
+2022-07-03 17:34:18,886 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:18,886 [INFO] Moving to next word: Current word: a, (Current index): 10
+2022-07-03 17:34:18,902 Logging State information:
+2022-07-03 17:34:18,902 Current action: 0, Current word: trip, current character: 0
+2022-07-03 17:34:18,902 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:18,916 Logging State information:
+2022-07-03 17:34:18,916 Current action: 0, Current word: trip, current character: 1
+2022-07-03 17:34:18,916 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:18,930 Logging State information:
+2022-07-03 17:34:18,930 Current action: 0, Current word: trip, current character: 2
+2022-07-03 17:34:18,930 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:18,944 Logging State information:
+2022-07-03 17:34:18,944 Current action: 0, Current word: trip, current character: 3
+2022-07-03 17:34:18,944 Reward function (-1): action = 1, character = 16
+2022-07-03 17:34:18,944 [INFO] Moving to next word: Current word: trip, (Current index): 11
+2022-07-03 17:34:18,960 Logging State information:
+2022-07-03 17:34:18,960 Current action: 0, Current word: down, current character: 0
+2022-07-03 17:34:18,960 Reward function (-1): action = 1, character = 4
+2022-07-03 17:34:18,974 Logging State information:
+2022-07-03 17:34:18,974 Current action: 0, Current word: down, current character: 1
+2022-07-03 17:34:18,974 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:18,987 Logging State information:
+2022-07-03 17:34:18,987 Current action: 0, Current word: down, current character: 2
+2022-07-03 17:34:18,987 Reward function (-1): action = 1, character = 23
+2022-07-03 17:34:19,002 Logging State information:
+2022-07-03 17:34:19,002 Current action: 0, Current word: down, current character: 3
+2022-07-03 17:34:19,002 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:19,002 [INFO] Moving to next word: Current word: down, (Current index): 12
+2022-07-03 17:34:19,017 Logging State information:
+2022-07-03 17:34:19,017 Current action: 0, Current word: memory, current character: 0
+2022-07-03 17:34:19,017 Reward function (-1): action = 1, character = 13
+2022-07-03 17:34:19,032 Logging State information:
+2022-07-03 17:34:19,032 Current action: 0, Current word: memory, current character: 1
+2022-07-03 17:34:19,032 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:19,046 Logging State information:
+2022-07-03 17:34:19,046 Current action: 0, Current word: memory, current character: 2
+2022-07-03 17:34:19,046 Reward function (-1): action = 1, character = 13
+2022-07-03 17:34:19,059 Logging State information:
+2022-07-03 17:34:19,059 Current action: 0, Current word: memory, current character: 3
+2022-07-03 17:34:19,059 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:19,073 Logging State information:
+2022-07-03 17:34:19,073 Current action: 0, Current word: memory, current character: 4
+2022-07-03 17:34:19,073 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:19,087 Logging State information:
+2022-07-03 17:34:19,087 Current action: 0, Current word: memory, current character: 5
+2022-07-03 17:34:19,087 Reward function (-1): action = 1, character = 25
+2022-07-03 17:34:19,087 [INFO] Moving to next word: Current word: memory, (Current index): 13
+2022-07-03 17:34:19,103 Logging State information:
+2022-07-03 17:34:19,103 Current action: 0, Current word: lane, current character: 0
+2022-07-03 17:34:19,103 Reward function (-1): action = 1, character = 12
+2022-07-03 17:34:19,117 Logging State information:
+2022-07-03 17:34:19,117 Current action: 0, Current word: lane, current character: 1
+2022-07-03 17:34:19,117 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:19,132 Logging State information:
+2022-07-03 17:34:19,132 Current action: 0, Current word: lane, current character: 2
+2022-07-03 17:34:19,132 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:19,146 Logging State information:
+2022-07-03 17:34:19,146 Current action: 0, Current word: lane, current character: 3
+2022-07-03 17:34:19,146 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:19,146 [INFO] Moving to next word: Current word: lane, (Current index): 14
+2022-07-03 17:34:19,161 Logging State information:
+2022-07-03 17:34:19,161 Current action: 0, Current word: of, current character: 0
+2022-07-03 17:34:19,161 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:19,175 Logging State information:
+2022-07-03 17:34:19,175 Current action: 0, Current word: of, current character: 1
+2022-07-03 17:34:19,176 Reward function (-1): action = 1, character = 6
+2022-07-03 17:34:19,176 [INFO] Moving to next word: Current word: of, (Current index): 15
+2022-07-03 17:34:19,191 Logging State information:
+2022-07-03 17:34:19,191 Current action: 0, Current word: the, current character: 0
+2022-07-03 17:34:19,191 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:19,205 Logging State information:
+2022-07-03 17:34:19,205 Current action: 0, Current word: the, current character: 1
+2022-07-03 17:34:19,205 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:19,219 Logging State information:
+2022-07-03 17:34:19,219 Current action: 0, Current word: the, current character: 2
+2022-07-03 17:34:19,219 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:19,219 [INFO] Moving to next word: Current word: the, (Current index): 16
+2022-07-03 17:34:19,234 Logging State information:
+2022-07-03 17:34:19,234 Current action: 0, Current word: topic, current character: 0
+2022-07-03 17:34:19,234 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:19,248 Logging State information:
+2022-07-03 17:34:19,248 Current action: 0, Current word: topic, current character: 1
+2022-07-03 17:34:19,248 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:19,263 Logging State information:
+2022-07-03 17:34:19,263 Current action: 0, Current word: topic, current character: 2
+2022-07-03 17:34:19,263 Reward function (-1): action = 1, character = 16
+2022-07-03 17:34:19,278 Logging State information:
+2022-07-03 17:34:19,278 Current action: 0, Current word: topic, current character: 3
+2022-07-03 17:34:19,278 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:19,292 Logging State information:
+2022-07-03 17:34:19,293 Current action: 0, Current word: topic, current character: 4
+2022-07-03 17:34:19,293 Reward function (-1): action = 1, character = 3
+2022-07-03 17:34:19,293 [INFO] Moving to next word: Current word: topic, (Current index): 17
+2022-07-03 17:34:19,308 Logging State information:
+2022-07-03 17:34:19,308 Current action: 0, Current word: of, current character: 0
+2022-07-03 17:34:19,308 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:19,323 Logging State information:
+2022-07-03 17:34:19,323 Current action: 0, Current word: of, current character: 1
+2022-07-03 17:34:19,323 Reward function (-1): action = 1, character = 6
+2022-07-03 17:34:19,323 [INFO] Moving to next word: Current word: of, (Current index): 18
+2022-07-03 17:34:19,339 Logging State information:
+2022-07-03 17:34:19,339 Current action: 0, Current word: rocketry:, current character: 0
+2022-07-03 17:34:19,339 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:19,353 Logging State information:
+2022-07-03 17:34:19,353 Current action: 0, Current word: rocketry:, current character: 1
+2022-07-03 17:34:19,353 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:19,367 Logging State information:
+2022-07-03 17:34:19,367 Current action: 0, Current word: rocketry:, current character: 2
+2022-07-03 17:34:19,367 Reward function (-1): action = 1, character = 3
+2022-07-03 17:34:19,383 Logging State information:
+2022-07-03 17:34:19,383 Current action: 0, Current word: rocketry:, current character: 3
+2022-07-03 17:34:19,383 Reward function (-1): action = 1, character = 11
+2022-07-03 17:34:19,397 Logging State information:
+2022-07-03 17:34:19,398 Current action: 0, Current word: rocketry:, current character: 4
+2022-07-03 17:34:19,398 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:19,412 Logging State information:
+2022-07-03 17:34:19,412 Current action: 0, Current word: rocketry:, current character: 5
+2022-07-03 17:34:19,412 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:19,427 Logging State information:
+2022-07-03 17:34:19,427 Current action: 0, Current word: rocketry:, current character: 6
+2022-07-03 17:34:19,427 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:19,443 Logging State information:
+2022-07-03 17:34:19,443 Current action: 0, Current word: rocketry:, current character: 7
+2022-07-03 17:34:19,443 Reward function (-1): action = 1, character = 25
+2022-07-03 17:34:19,458 Logging State information:
+2022-07-03 17:34:19,458 Current action: 0, Current word: rocketry:, current character: 8
+2022-07-03 17:34:19,458 Reward function (-1): action = 1, character = -38
+2022-07-03 17:34:19,458 [INFO] Moving to next word: Current word: rocketry:, (Current index): 19
+2022-07-03 17:34:19,474 Logging State information:
+2022-07-03 17:34:19,474 Current action: 0, Current word: in, current character: 0
+2022-07-03 17:34:19,474 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:19,488 Logging State information:
+2022-07-03 17:34:19,488 Current action: 0, Current word: in, current character: 1
+2022-07-03 17:34:19,488 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:19,488 [INFO] Moving to next word: Current word: in, (Current index): 20
+2022-07-03 17:34:19,503 Logging State information:
+2022-07-03 17:34:19,503 Current action: 0, Current word: the, current character: 0
+2022-07-03 17:34:19,503 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:19,517 Logging State information:
+2022-07-03 17:34:19,517 Current action: 0, Current word: the, current character: 1
+2022-07-03 17:34:19,517 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:19,531 Logging State information:
+2022-07-03 17:34:19,531 Current action: 0, Current word: the, current character: 2
+2022-07-03 17:34:19,531 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:19,531 [INFO] Moving to next word: Current word: the, (Current index): 21
+2022-07-03 17:34:19,547 Logging State information:
+2022-07-03 17:34:19,547 Current action: 0, Current word: following, current character: 0
+2022-07-03 17:34:19,547 Reward function (-1): action = 1, character = 6
+2022-07-03 17:34:19,561 Logging State information:
+2022-07-03 17:34:19,561 Current action: 0, Current word: following, current character: 1
+2022-07-03 17:34:19,561 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:19,575 Logging State information:
+2022-07-03 17:34:19,575 Current action: 0, Current word: following, current character: 2
+2022-07-03 17:34:19,575 Reward function (-1): action = 1, character = 12
+2022-07-03 17:34:19,589 Logging State information:
+2022-07-03 17:34:19,589 Current action: 0, Current word: following, current character: 3
+2022-07-03 17:34:19,590 Reward function (-1): action = 1, character = 12
+2022-07-03 17:34:19,604 Logging State information:
+2022-07-03 17:34:19,605 Current action: 0, Current word: following, current character: 4
+2022-07-03 17:34:19,605 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:19,619 Logging State information:
+2022-07-03 17:34:19,619 Current action: 0, Current word: following, current character: 5
+2022-07-03 17:34:19,619 Reward function (-1): action = 1, character = 23
+2022-07-03 17:34:19,633 Logging State information:
+2022-07-03 17:34:19,633 Current action: 0, Current word: following, current character: 6
+2022-07-03 17:34:19,633 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:19,646 Logging State information:
+2022-07-03 17:34:19,646 Current action: 0, Current word: following, current character: 7
+2022-07-03 17:34:19,646 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:19,660 Logging State information:
+2022-07-03 17:34:19,660 Current action: 0, Current word: following, current character: 8
+2022-07-03 17:34:19,660 Reward function (-1): action = 1, character = 7
+2022-07-03 17:34:19,660 [INFO] Moving to next word: Current word: following, (Current index): 22
+2022-07-03 17:34:19,676 Logging State information:
+2022-07-03 17:34:19,676 Current action: 0, Current word: few, current character: 0
+2022-07-03 17:34:19,676 Reward function (-1): action = 1, character = 6
+2022-07-03 17:34:19,690 Logging State information:
+2022-07-03 17:34:19,690 Current action: 0, Current word: few, current character: 1
+2022-07-03 17:34:19,690 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:19,704 Logging State information:
+2022-07-03 17:34:19,704 Current action: 0, Current word: few, current character: 2
+2022-07-03 17:34:19,704 Reward function (-1): action = 1, character = 23
+2022-07-03 17:34:19,704 [INFO] Moving to next word: Current word: few, (Current index): 23
+2022-07-03 17:34:19,720 Logging State information:
+2022-07-03 17:34:19,720 Current action: 0, Current word: pages;, current character: 0
+2022-07-03 17:34:19,720 Reward function (-1): action = 1, character = 16
+2022-07-03 17:34:19,734 Logging State information:
+2022-07-03 17:34:19,734 Current action: 0, Current word: pages;, current character: 1
+2022-07-03 17:34:19,734 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:19,748 Logging State information:
+2022-07-03 17:34:19,748 Current action: 0, Current word: pages;, current character: 2
+2022-07-03 17:34:19,748 Reward function (-1): action = 1, character = 7
+2022-07-03 17:34:19,763 Logging State information:
+2022-07-03 17:34:19,763 Current action: 0, Current word: pages;, current character: 3
+2022-07-03 17:34:19,763 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:19,778 Logging State information:
+2022-07-03 17:34:19,778 Current action: 0, Current word: pages;, current character: 4
+2022-07-03 17:34:19,778 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:19,792 Logging State information:
+2022-07-03 17:34:19,792 Current action: 0, Current word: pages;, current character: 5
+2022-07-03 17:34:19,792 Reward function (-1): action = 1, character = -37
+2022-07-03 17:34:19,792 [INFO] Moving to next word: Current word: pages;, (Current index): 24
+2022-07-03 17:34:19,808 Logging State information:
+2022-07-03 17:34:19,808 Current action: 0, Current word: wish, current character: 0
+2022-07-03 17:34:19,808 Reward function (-1): action = 1, character = 23
+2022-07-03 17:34:19,822 Logging State information:
+2022-07-03 17:34:19,822 Current action: 0, Current word: wish, current character: 1
+2022-07-03 17:34:19,822 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:19,837 Logging State information:
+2022-07-03 17:34:19,837 Current action: 0, Current word: wish, current character: 2
+2022-07-03 17:34:19,837 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:19,851 Logging State information:
+2022-07-03 17:34:19,851 Current action: 0, Current word: wish, current character: 3
+2022-07-03 17:34:19,851 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:19,851 [INFO] Moving to next word: Current word: wish, (Current index): 25
+2022-07-03 17:34:19,867 Logging State information:
+2022-07-03 17:34:19,867 Current action: 0, Current word: to, current character: 0
+2022-07-03 17:34:19,867 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:19,881 Logging State information:
+2022-07-03 17:34:19,881 Current action: 0, Current word: to, current character: 1
+2022-07-03 17:34:19,881 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:19,882 [INFO] Moving to next word: Current word: to, (Current index): 26
+2022-07-03 17:34:19,897 Logging State information:
+2022-07-03 17:34:19,897 Current action: 0, Current word: start, current character: 0
+2022-07-03 17:34:19,897 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:19,910 Logging State information:
+2022-07-03 17:34:19,911 Current action: 0, Current word: start, current character: 1
+2022-07-03 17:34:19,911 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:19,925 Logging State information:
+2022-07-03 17:34:19,925 Current action: 0, Current word: start, current character: 2
+2022-07-03 17:34:19,925 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:19,939 Logging State information:
+2022-07-03 17:34:19,939 Current action: 0, Current word: start, current character: 3
+2022-07-03 17:34:19,940 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:19,954 Logging State information:
+2022-07-03 17:34:19,954 Current action: 0, Current word: start, current character: 4
+2022-07-03 17:34:19,954 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:19,954 [INFO] Moving to next word: Current word: start, (Current index): 27
+2022-07-03 17:34:19,969 Logging State information:
+2022-07-03 17:34:19,969 Current action: 0, Current word: from, current character: 0
+2022-07-03 17:34:19,969 Reward function (-1): action = 1, character = 6
+2022-07-03 17:34:19,983 Logging State information:
+2022-07-03 17:34:19,983 Current action: 0, Current word: from, current character: 1
+2022-07-03 17:34:19,983 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:19,996 Logging State information:
+2022-07-03 17:34:19,996 Current action: 0, Current word: from, current character: 2
+2022-07-03 17:34:19,996 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:20,011 Logging State information:
+2022-07-03 17:34:20,011 Current action: 0, Current word: from, current character: 3
+2022-07-03 17:34:20,011 Reward function (-1): action = 1, character = 13
+2022-07-03 17:34:20,011 [INFO] Moving to next word: Current word: from, (Current index): 28
+2022-07-03 17:34:20,026 Logging State information:
+2022-07-03 17:34:20,026 Current action: 0, Current word: the, current character: 0
+2022-07-03 17:34:20,026 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:20,038 Logging State information:
+2022-07-03 17:34:20,039 Current action: 0, Current word: the, current character: 1
+2022-07-03 17:34:20,039 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:20,052 Logging State information:
+2022-07-03 17:34:20,052 Current action: 0, Current word: the, current character: 2
+2022-07-03 17:34:20,052 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:20,052 [INFO] Moving to next word: Current word: the, (Current index): 29
+2022-07-03 17:34:20,068 Logging State information:
+2022-07-03 17:34:20,068 Current action: 0, Current word: early, current character: 0
+2022-07-03 17:34:20,068 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:20,082 Logging State information:
+2022-07-03 17:34:20,082 Current action: 0, Current word: early, current character: 1
+2022-07-03 17:34:20,082 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:20,096 Logging State information:
+2022-07-03 17:34:20,096 Current action: 0, Current word: early, current character: 2
+2022-07-03 17:34:20,096 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:20,111 Logging State information:
+2022-07-03 17:34:20,111 Current action: 0, Current word: early, current character: 3
+2022-07-03 17:34:20,111 Reward function (-1): action = 1, character = 12
+2022-07-03 17:34:20,126 Logging State information:
+2022-07-03 17:34:20,126 Current action: 0, Current word: early, current character: 4
+2022-07-03 17:34:20,126 Reward function (-1): action = 1, character = 25
+2022-07-03 17:34:20,126 [INFO] Moving to next word: Current word: early, (Current index): 30
+2022-07-03 17:34:20,142 Logging State information:
+2022-07-03 17:34:20,142 Current action: 0, Current word: discovery, current character: 0
+2022-07-03 17:34:20,142 Reward function (-1): action = 1, character = 4
+2022-07-03 17:34:20,157 Logging State information:
+2022-07-03 17:34:20,157 Current action: 0, Current word: discovery, current character: 1
+2022-07-03 17:34:20,157 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:20,171 Logging State information:
+2022-07-03 17:34:20,171 Current action: 0, Current word: discovery, current character: 2
+2022-07-03 17:34:20,171 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:20,185 Logging State information:
+2022-07-03 17:34:20,186 Current action: 0, Current word: discovery, current character: 3
+2022-07-03 17:34:20,186 Reward function (-1): action = 1, character = 3
+2022-07-03 17:34:20,200 Logging State information:
+2022-07-03 17:34:20,200 Current action: 0, Current word: discovery, current character: 4
+2022-07-03 17:34:20,201 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:20,215 Logging State information:
+2022-07-03 17:34:20,215 Current action: 0, Current word: discovery, current character: 5
+2022-07-03 17:34:20,215 Reward function (-1): action = 1, character = 22
+2022-07-03 17:34:20,229 Logging State information:
+2022-07-03 17:34:20,229 Current action: 0, Current word: discovery, current character: 6
+2022-07-03 17:34:20,229 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:20,244 Logging State information:
+2022-07-03 17:34:20,244 Current action: 0, Current word: discovery, current character: 7
+2022-07-03 17:34:20,244 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:20,259 Logging State information:
+2022-07-03 17:34:20,259 Current action: 0, Current word: discovery, current character: 8
+2022-07-03 17:34:20,259 Reward function (-1): action = 1, character = 25
+2022-07-03 17:34:20,259 [INFO] Moving to next word: Current word: discovery, (Current index): 31
+2022-07-03 17:34:20,274 Logging State information:
+2022-07-03 17:34:20,274 Current action: 0, Current word: of, current character: 0
+2022-07-03 17:34:20,274 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:20,288 Logging State information:
+2022-07-03 17:34:20,288 Current action: 0, Current word: of, current character: 1
+2022-07-03 17:34:20,288 Reward function (-1): action = 1, character = 6
+2022-07-03 17:34:20,288 [INFO] Moving to next word: Current word: of, (Current index): 32
+2022-07-03 17:34:20,304 Logging State information:
+2022-07-03 17:34:20,304 Current action: 0, Current word: the, current character: 0
+2022-07-03 17:34:20,304 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:20,319 Logging State information:
+2022-07-03 17:34:20,319 Current action: 0, Current word: the, current character: 1
+2022-07-03 17:34:20,319 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:20,334 Logging State information:
+2022-07-03 17:34:20,334 Current action: 0, Current word: the, current character: 2
+2022-07-03 17:34:20,334 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:20,335 [INFO] Moving to next word: Current word: the, (Current index): 33
+2022-07-03 17:34:20,351 Logging State information:
+2022-07-03 17:34:20,351 Current action: 0, Current word: rocket, current character: 0
+2022-07-03 17:34:20,351 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:20,367 Logging State information:
+2022-07-03 17:34:20,367 Current action: 0, Current word: rocket, current character: 1
+2022-07-03 17:34:20,367 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:20,381 Logging State information:
+2022-07-03 17:34:20,381 Current action: 0, Current word: rocket, current character: 2
+2022-07-03 17:34:20,381 Reward function (-1): action = 1, character = 3
+2022-07-03 17:34:20,397 Logging State information:
+2022-07-03 17:34:20,397 Current action: 0, Current word: rocket, current character: 3
+2022-07-03 17:34:20,397 Reward function (-1): action = 1, character = 11
+2022-07-03 17:34:20,412 Logging State information:
+2022-07-03 17:34:20,413 Current action: 0, Current word: rocket, current character: 4
+2022-07-03 17:34:20,413 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:20,427 Logging State information:
+2022-07-03 17:34:20,427 Current action: 0, Current word: rocket, current character: 5
+2022-07-03 17:34:20,427 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:20,427 [INFO] Moving to next word: Current word: rocket, (Current index): 34
+2022-07-03 17:34:20,445 Logging State information:
+2022-07-03 17:34:20,445 Current action: 0, Current word: and, current character: 0
+2022-07-03 17:34:20,445 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:20,460 Logging State information:
+2022-07-03 17:34:20,460 Current action: 0, Current word: and, current character: 1
+2022-07-03 17:34:20,460 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:20,475 Logging State information:
+2022-07-03 17:34:20,475 Current action: 0, Current word: and, current character: 2
+2022-07-03 17:34:20,475 Reward function (-1): action = 1, character = 4
+2022-07-03 17:34:20,475 [INFO] Moving to next word: Current word: and, (Current index): 35
+2022-07-03 17:34:20,491 Logging State information:
+2022-07-03 17:34:20,491 Current action: 0, Current word: its, current character: 0
+2022-07-03 17:34:20,491 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:20,506 Logging State information:
+2022-07-03 17:34:20,506 Current action: 0, Current word: its, current character: 1
+2022-07-03 17:34:20,506 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:20,521 Logging State information:
+2022-07-03 17:34:20,521 Current action: 0, Current word: its, current character: 2
+2022-07-03 17:34:20,521 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:20,522 [INFO] Moving to next word: Current word: its, (Current index): 36
+2022-07-03 17:34:20,538 Logging State information:
+2022-07-03 17:34:20,538 Current action: 0, Current word: uses, current character: 0
+2022-07-03 17:34:20,538 Reward function (-1): action = 1, character = 21
+2022-07-03 17:34:20,553 Logging State information:
+2022-07-03 17:34:20,553 Current action: 0, Current word: uses, current character: 1
+2022-07-03 17:34:20,553 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:20,568 Logging State information:
+2022-07-03 17:34:20,568 Current action: 0, Current word: uses, current character: 2
+2022-07-03 17:34:20,568 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:20,583 Logging State information:
+2022-07-03 17:34:20,583 Current action: 0, Current word: uses, current character: 3
+2022-07-03 17:34:20,583 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:20,584 [INFO] Moving to next word: Current word: uses, (Current index): 37
+2022-07-03 17:34:20,600 Logging State information:
+2022-07-03 17:34:20,600 Current action: 0, Current word: in, current character: 0
+2022-07-03 17:34:20,600 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:20,615 Logging State information:
+2022-07-03 17:34:20,615 Current action: 0, Current word: in, current character: 1
+2022-07-03 17:34:20,615 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:20,615 [INFO] Moving to next word: Current word: in, (Current index): 38
+2022-07-03 17:34:20,631 Logging State information:
+2022-07-03 17:34:20,631 Current action: 0, Current word: the, current character: 0
+2022-07-03 17:34:20,631 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:20,646 Logging State information:
+2022-07-03 17:34:20,646 Current action: 0, Current word: the, current character: 1
+2022-07-03 17:34:20,646 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:20,660 Logging State information:
+2022-07-03 17:34:20,661 Current action: 0, Current word: the, current character: 2
+2022-07-03 17:34:20,661 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:20,661 [INFO] Moving to next word: Current word: the, (Current index): 39
+2022-07-03 17:34:20,676 Logging State information:
+2022-07-03 17:34:20,676 Current action: 0, Current word: 13th, current character: 0
+2022-07-03 17:34:20,677 Reward function (-1): action = 1, character = -47
+2022-07-03 17:34:20,691 Logging State information:
+2022-07-03 17:34:20,691 Current action: 0, Current word: 13th, current character: 1
+2022-07-03 17:34:20,691 Reward function (-1): action = 1, character = -45
+2022-07-03 17:34:20,706 Logging State information:
+2022-07-03 17:34:20,706 Current action: 0, Current word: 13th, current character: 2
+2022-07-03 17:34:20,706 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:20,722 Logging State information:
+2022-07-03 17:34:20,722 Current action: 0, Current word: 13th, current character: 3
+2022-07-03 17:34:20,722 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:20,722 [INFO] Moving to next word: Current word: 13th, (Current index): 40
+2022-07-03 17:34:20,739 Logging State information:
+2022-07-03 17:34:20,739 Current action: 0, Current word: and, current character: 0
+2022-07-03 17:34:20,739 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:20,755 Logging State information:
+2022-07-03 17:34:20,755 Current action: 0, Current word: and, current character: 1
+2022-07-03 17:34:20,755 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:20,770 Logging State information:
+2022-07-03 17:34:20,770 Current action: 0, Current word: and, current character: 2
+2022-07-03 17:34:20,770 Reward function (-1): action = 1, character = 4
+2022-07-03 17:34:20,770 [INFO] Moving to next word: Current word: and, (Current index): 41
+2022-07-03 17:34:20,787 Logging State information:
+2022-07-03 17:34:20,787 Current action: 0, Current word: 15th, current character: 0
+2022-07-03 17:34:20,787 Reward function (-1): action = 1, character = -47
+2022-07-03 17:34:20,801 Logging State information:
+2022-07-03 17:34:20,802 Current action: 0, Current word: 15th, current character: 1
+2022-07-03 17:34:20,802 Reward function (-1): action = 1, character = -43
+2022-07-03 17:34:20,817 Logging State information:
+2022-07-03 17:34:20,817 Current action: 0, Current word: 15th, current character: 2
+2022-07-03 17:34:20,817 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:20,832 Logging State information:
+2022-07-03 17:34:20,832 Current action: 0, Current word: 15th, current character: 3
+2022-07-03 17:34:20,832 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:20,832 [INFO] Moving to next word: Current word: 15th, (Current index): 42
+2022-07-03 17:34:20,850 Logging State information:
+2022-07-03 17:34:20,850 Current action: 0, Current word: centuries:, current character: 0
+2022-07-03 17:34:20,850 Reward function (-1): action = 1, character = 3
+2022-07-03 17:34:20,865 Logging State information:
+2022-07-03 17:34:20,865 Current action: 0, Current word: centuries:, current character: 1
+2022-07-03 17:34:20,865 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:20,880 Logging State information:
+2022-07-03 17:34:20,880 Current action: 0, Current word: centuries:, current character: 2
+2022-07-03 17:34:20,880 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:20,895 Logging State information:
+2022-07-03 17:34:20,895 Current action: 0, Current word: centuries:, current character: 3
+2022-07-03 17:34:20,895 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:20,912 Logging State information:
+2022-07-03 17:34:20,912 Current action: 0, Current word: centuries:, current character: 4
+2022-07-03 17:34:20,912 Reward function (-1): action = 1, character = 21
+2022-07-03 17:34:20,927 Logging State information:
+2022-07-03 17:34:20,927 Current action: 0, Current word: centuries:, current character: 5
+2022-07-03 17:34:20,927 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:20,941 Logging State information:
+2022-07-03 17:34:20,942 Current action: 0, Current word: centuries:, current character: 6
+2022-07-03 17:34:20,942 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:20,958 Logging State information:
+2022-07-03 17:34:20,958 Current action: 0, Current word: centuries:, current character: 7
+2022-07-03 17:34:20,958 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:20,973 Logging State information:
+2022-07-03 17:34:20,973 Current action: 0, Current word: centuries:, current character: 8
+2022-07-03 17:34:20,973 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:20,987 Logging State information:
+2022-07-03 17:34:20,987 Current action: 0, Current word: centuries:, current character: 9
+2022-07-03 17:34:20,987 Reward function (-1): action = 1, character = -38
+2022-07-03 17:34:20,987 [INFO] Moving to next word: Current word: centuries:, (Current index): 43
+2022-07-03 17:34:21,004 Logging State information:
+2022-07-03 17:34:21,004 Current action: 0, Current word: then, current character: 0
+2022-07-03 17:34:21,004 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:21,018 Logging State information:
+2022-07-03 17:34:21,019 Current action: 0, Current word: then, current character: 1
+2022-07-03 17:34:21,019 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:21,034 Logging State information:
+2022-07-03 17:34:21,034 Current action: 0, Current word: then, current character: 2
+2022-07-03 17:34:21,034 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:21,050 Logging State information:
+2022-07-03 17:34:21,050 Current action: 0, Current word: then, current character: 3
+2022-07-03 17:34:21,050 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:21,050 [INFO] Moving to next word: Current word: then, (Current index): 44
+2022-07-03 17:34:21,067 Logging State information:
+2022-07-03 17:34:21,067 Current action: 0, Current word: take, current character: 0
+2022-07-03 17:34:21,067 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:21,082 Logging State information:
+2022-07-03 17:34:21,082 Current action: 0, Current word: take, current character: 1
+2022-07-03 17:34:21,082 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:21,098 Logging State information:
+2022-07-03 17:34:21,098 Current action: 0, Current word: take, current character: 2
+2022-07-03 17:34:21,098 Reward function (-1): action = 1, character = 11
+2022-07-03 17:34:21,114 Logging State information:
+2022-07-03 17:34:21,114 Current action: 0, Current word: take, current character: 3
+2022-07-03 17:34:21,114 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:21,114 [INFO] Moving to next word: Current word: take, (Current index): 45
+2022-07-03 17:34:21,130 Logging State information:
+2022-07-03 17:34:21,130 Current action: 0, Current word: the, current character: 0
+2022-07-03 17:34:21,130 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:21,145 Logging State information:
+2022-07-03 17:34:21,145 Current action: 0, Current word: the, current character: 1
+2022-07-03 17:34:21,145 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:21,160 Logging State information:
+2022-07-03 17:34:21,160 Current action: 0, Current word: the, current character: 2
+2022-07-03 17:34:21,160 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:21,160 [INFO] Moving to next word: Current word: the, (Current index): 46
+2022-07-03 17:34:21,177 Logging State information:
+2022-07-03 17:34:21,177 Current action: 0, Current word: conversation, current character: 0
+2022-07-03 17:34:21,177 Reward function (-1): action = 1, character = 3
+2022-07-03 17:34:21,193 Logging State information:
+2022-07-03 17:34:21,193 Current action: 0, Current word: conversation, current character: 1
+2022-07-03 17:34:21,193 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:21,208 Logging State information:
+2022-07-03 17:34:21,208 Current action: 0, Current word: conversation, current character: 2
+2022-07-03 17:34:21,208 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:21,223 Logging State information:
+2022-07-03 17:34:21,224 Current action: 0, Current word: conversation, current character: 3
+2022-07-03 17:34:21,224 Reward function (-1): action = 1, character = 22
+2022-07-03 17:34:21,238 Logging State information:
+2022-07-03 17:34:21,238 Current action: 0, Current word: conversation, current character: 4
+2022-07-03 17:34:21,238 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:21,253 Logging State information:
+2022-07-03 17:34:21,253 Current action: 0, Current word: conversation, current character: 5
+2022-07-03 17:34:21,253 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:21,268 Logging State information:
+2022-07-03 17:34:21,268 Current action: 0, Current word: conversation, current character: 6
+2022-07-03 17:34:21,268 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:21,283 Logging State information:
+2022-07-03 17:34:21,283 Current action: 0, Current word: conversation, current character: 7
+2022-07-03 17:34:21,283 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:21,297 Logging State information:
+2022-07-03 17:34:21,298 Current action: 0, Current word: conversation, current character: 8
+2022-07-03 17:34:21,298 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:21,313 Logging State information:
+2022-07-03 17:34:21,313 Current action: 0, Current word: conversation, current character: 9
+2022-07-03 17:34:21,313 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:21,328 Logging State information:
+2022-07-03 17:34:21,328 Current action: 0, Current word: conversation, current character: 10
+2022-07-03 17:34:21,328 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:21,344 Logging State information:
+2022-07-03 17:34:21,344 Current action: 0, Current word: conversation, current character: 11
+2022-07-03 17:34:21,344 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:21,344 [INFO] Moving to next word: Current word: conversation, (Current index): 47
+2022-07-03 17:34:21,360 Logging State information:
+2022-07-03 17:34:21,360 Current action: 0, Current word: to, current character: 0
+2022-07-03 17:34:21,360 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:21,375 Logging State information:
+2022-07-03 17:34:21,376 Current action: 0, Current word: to, current character: 1
+2022-07-03 17:34:21,376 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:21,376 [INFO] Moving to next word: Current word: to, (Current index): 48
+2022-07-03 17:34:21,393 Logging State information:
+2022-07-03 17:34:21,393 Current action: 0, Current word: the, current character: 0
+2022-07-03 17:34:21,393 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:21,409 Logging State information:
+2022-07-03 17:34:21,409 Current action: 0, Current word: the, current character: 1
+2022-07-03 17:34:21,409 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:21,423 Logging State information:
+2022-07-03 17:34:21,423 Current action: 0, Current word: the, current character: 2
+2022-07-03 17:34:21,424 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:21,424 [INFO] Moving to next word: Current word: the, (Current index): 49
+2022-07-03 17:34:21,444 Logging State information:
+2022-07-03 17:34:21,444 Current action: 0, Current word: early, current character: 0
+2022-07-03 17:34:21,444 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:21,460 Logging State information:
+2022-07-03 17:34:21,460 Current action: 0, Current word: early, current character: 1
+2022-07-03 17:34:21,460 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:21,476 Logging State information:
+2022-07-03 17:34:21,476 Current action: 0, Current word: early, current character: 2
+2022-07-03 17:34:21,476 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:21,492 Logging State information:
+2022-07-03 17:34:21,492 Current action: 0, Current word: early, current character: 3
+2022-07-03 17:34:21,492 Reward function (-1): action = 1, character = 12
+2022-07-03 17:34:21,508 Logging State information:
+2022-07-03 17:34:21,508 Current action: 0, Current word: early, current character: 4
+2022-07-03 17:34:21,508 Reward function (-1): action = 1, character = 25
+2022-07-03 17:34:21,508 [INFO] Moving to next word: Current word: early, (Current index): 50
+2022-07-03 17:34:21,525 Logging State information:
+2022-07-03 17:34:21,525 Current action: 0, Current word: world, current character: 0
+2022-07-03 17:34:21,525 Reward function (-1): action = 1, character = 23
+2022-07-03 17:34:21,540 Logging State information:
+2022-07-03 17:34:21,540 Current action: 0, Current word: world, current character: 1
+2022-07-03 17:34:21,540 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:21,556 Logging State information:
+2022-07-03 17:34:21,556 Current action: 0, Current word: world, current character: 2
+2022-07-03 17:34:21,556 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:21,571 Logging State information:
+2022-07-03 17:34:21,571 Current action: 0, Current word: world, current character: 3
+2022-07-03 17:34:21,571 Reward function (-1): action = 1, character = 12
+2022-07-03 17:34:21,587 Logging State information:
+2022-07-03 17:34:21,587 Current action: 0, Current word: world, current character: 4
+2022-07-03 17:34:21,587 Reward function (-1): action = 1, character = 4
+2022-07-03 17:34:21,587 [INFO] Moving to next word: Current word: world, (Current index): 51
+2022-07-03 17:34:21,604 Logging State information:
+2022-07-03 17:34:21,604 Current action: 0, Current word: war, current character: 0
+2022-07-03 17:34:21,604 Reward function (-1): action = 1, character = 23
+2022-07-03 17:34:21,620 Logging State information:
+2022-07-03 17:34:21,620 Current action: 0, Current word: war, current character: 1
+2022-07-03 17:34:21,620 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:21,635 Logging State information:
+2022-07-03 17:34:21,635 Current action: 0, Current word: war, current character: 2
+2022-07-03 17:34:21,635 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:21,635 [INFO] Moving to next word: Current word: war, (Current index): 52
+2022-07-03 17:34:21,652 Logging State information:
+2022-07-03 17:34:21,652 Current action: 0, Current word: era, current character: 0
+2022-07-03 17:34:21,652 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:21,668 Logging State information:
+2022-07-03 17:34:21,668 Current action: 0, Current word: era, current character: 1
+2022-07-03 17:34:21,668 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:21,684 Logging State information:
+2022-07-03 17:34:21,684 Current action: 0, Current word: era, current character: 2
+2022-07-03 17:34:21,684 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:21,684 [INFO] Moving to next word: Current word: era, (Current index): 53
+2022-07-03 17:34:21,701 Logging State information:
+2022-07-03 17:34:21,701 Current action: 0, Current word: and, current character: 0
+2022-07-03 17:34:21,701 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:21,716 Logging State information:
+2022-07-03 17:34:21,716 Current action: 0, Current word: and, current character: 1
+2022-07-03 17:34:21,716 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:21,731 Logging State information:
+2022-07-03 17:34:21,731 Current action: 0, Current word: and, current character: 2
+2022-07-03 17:34:21,731 Reward function (-1): action = 1, character = 4
+2022-07-03 17:34:21,731 [INFO] Moving to next word: Current word: and, (Current index): 54
+2022-07-03 17:34:21,748 Logging State information:
+2022-07-03 17:34:21,748 Current action: 0, Current word: the, current character: 0
+2022-07-03 17:34:21,748 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:21,764 Logging State information:
+2022-07-03 17:34:21,764 Current action: 0, Current word: the, current character: 1
+2022-07-03 17:34:21,764 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:21,780 Logging State information:
+2022-07-03 17:34:21,780 Current action: 0, Current word: the, current character: 2
+2022-07-03 17:34:21,780 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:21,780 [INFO] Moving to next word: Current word: the, (Current index): 55
+2022-07-03 17:34:21,797 Logging State information:
+2022-07-03 17:34:21,797 Current action: 0, Current word: use, current character: 0
+2022-07-03 17:34:21,797 Reward function (-1): action = 1, character = 21
+2022-07-03 17:34:21,813 Logging State information:
+2022-07-03 17:34:21,813 Current action: 0, Current word: use, current character: 1
+2022-07-03 17:34:21,813 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:21,828 Logging State information:
+2022-07-03 17:34:21,828 Current action: 0, Current word: use, current character: 2
+2022-07-03 17:34:21,828 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:21,828 [INFO] Moving to next word: Current word: use, (Current index): 56
+2022-07-03 17:34:21,844 Logging State information:
+2022-07-03 17:34:21,844 Current action: 0, Current word: of, current character: 0
+2022-07-03 17:34:21,844 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:21,860 Logging State information:
+2022-07-03 17:34:21,860 Current action: 0, Current word: of, current character: 1
+2022-07-03 17:34:21,860 Reward function (-1): action = 1, character = 6
+2022-07-03 17:34:21,860 [INFO] Moving to next word: Current word: of, (Current index): 57
+2022-07-03 17:34:21,877 Logging State information:
+2022-07-03 17:34:21,877 Current action: 0, Current word: rocketry, current character: 0
+2022-07-03 17:34:21,877 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:21,892 Logging State information:
+2022-07-03 17:34:21,892 Current action: 0, Current word: rocketry, current character: 1
+2022-07-03 17:34:21,892 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:21,908 Logging State information:
+2022-07-03 17:34:21,908 Current action: 0, Current word: rocketry, current character: 2
+2022-07-03 17:34:21,908 Reward function (-1): action = 1, character = 3
+2022-07-03 17:34:21,924 Logging State information:
+2022-07-03 17:34:21,924 Current action: 0, Current word: rocketry, current character: 3
+2022-07-03 17:34:21,924 Reward function (-1): action = 1, character = 11
+2022-07-03 17:34:21,940 Logging State information:
+2022-07-03 17:34:21,940 Current action: 0, Current word: rocketry, current character: 4
+2022-07-03 17:34:21,940 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:21,956 Logging State information:
+2022-07-03 17:34:21,956 Current action: 0, Current word: rocketry, current character: 5
+2022-07-03 17:34:21,956 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:21,970 Logging State information:
+2022-07-03 17:34:21,970 Current action: 0, Current word: rocketry, current character: 6
+2022-07-03 17:34:21,970 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:21,986 Logging State information:
+2022-07-03 17:34:21,986 Current action: 0, Current word: rocketry, current character: 7
+2022-07-03 17:34:21,987 Reward function (-1): action = 1, character = 25
+2022-07-03 17:34:21,987 [INFO] Moving to next word: Current word: rocketry, (Current index): 58
+2022-07-03 17:34:22,004 Logging State information:
+2022-07-03 17:34:22,004 Current action: 0, Current word: in, current character: 0
+2022-07-03 17:34:22,004 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:22,019 Logging State information:
+2022-07-03 17:34:22,019 Current action: 0, Current word: in, current character: 1
+2022-07-03 17:34:22,019 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:22,019 [INFO] Moving to next word: Current word: in, (Current index): 59
+2022-07-03 17:34:22,036 Logging State information:
+2022-07-03 17:34:22,036 Current action: 0, Current word: the, current character: 0
+2022-07-03 17:34:22,036 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:22,051 Logging State information:
+2022-07-03 17:34:22,051 Current action: 0, Current word: the, current character: 1
+2022-07-03 17:34:22,051 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:22,067 Logging State information:
+2022-07-03 17:34:22,067 Current action: 0, Current word: the, current character: 2
+2022-07-03 17:34:22,067 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:22,067 [INFO] Moving to next word: Current word: the, (Current index): 60
+2022-07-03 17:34:22,083 Logging State information:
+2022-07-03 17:34:22,083 Current action: 0, Current word: form, current character: 0
+2022-07-03 17:34:22,083 Reward function (-1): action = 1, character = 6
+2022-07-03 17:34:22,099 Logging State information:
+2022-07-03 17:34:22,099 Current action: 0, Current word: form, current character: 1
+2022-07-03 17:34:22,099 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:22,114 Logging State information:
+2022-07-03 17:34:22,114 Current action: 0, Current word: form, current character: 2
+2022-07-03 17:34:22,114 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:22,129 Logging State information:
+2022-07-03 17:34:22,129 Current action: 0, Current word: form, current character: 3
+2022-07-03 17:34:22,130 Reward function (-1): action = 1, character = 13
+2022-07-03 17:34:22,130 [INFO] Moving to next word: Current word: form, (Current index): 61
+2022-07-03 17:34:22,146 Logging State information:
+2022-07-03 17:34:22,146 Current action: 0, Current word: of, current character: 0
+2022-07-03 17:34:22,147 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:22,162 Logging State information:
+2022-07-03 17:34:22,162 Current action: 0, Current word: of, current character: 1
+2022-07-03 17:34:22,162 Reward function (-1): action = 1, character = 6
+2022-07-03 17:34:22,162 [INFO] Moving to next word: Current word: of, (Current index): 62
+2022-07-03 17:34:22,178 Logging State information:
+2022-07-03 17:34:22,179 Current action: 0, Current word: missiles, current character: 0
+2022-07-03 17:34:22,179 Reward function (-1): action = 1, character = 13
+2022-07-03 17:34:22,194 Logging State information:
+2022-07-03 17:34:22,194 Current action: 0, Current word: missiles, current character: 1
+2022-07-03 17:34:22,194 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:22,210 Logging State information:
+2022-07-03 17:34:22,210 Current action: 0, Current word: missiles, current character: 2
+2022-07-03 17:34:22,210 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:22,226 Logging State information:
+2022-07-03 17:34:22,226 Current action: 0, Current word: missiles, current character: 3
+2022-07-03 17:34:22,226 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:22,241 Logging State information:
+2022-07-03 17:34:22,241 Current action: 0, Current word: missiles, current character: 4
+2022-07-03 17:34:22,241 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:22,256 Logging State information:
+2022-07-03 17:34:22,256 Current action: 0, Current word: missiles, current character: 5
+2022-07-03 17:34:22,256 Reward function (-1): action = 1, character = 12
+2022-07-03 17:34:22,272 Logging State information:
+2022-07-03 17:34:22,272 Current action: 0, Current word: missiles, current character: 6
+2022-07-03 17:34:22,272 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:22,288 Logging State information:
+2022-07-03 17:34:22,288 Current action: 0, Current word: missiles, current character: 7
+2022-07-03 17:34:22,288 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:22,288 [INFO] Moving to next word: Current word: missiles, (Current index): 63
+2022-07-03 17:34:22,305 Logging State information:
+2022-07-03 17:34:22,305 Current action: 0, Current word: as, current character: 0
+2022-07-03 17:34:22,305 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:22,321 Logging State information:
+2022-07-03 17:34:22,321 Current action: 0, Current word: as, current character: 1
+2022-07-03 17:34:22,321 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:22,321 [INFO] Moving to next word: Current word: as, (Current index): 64
+2022-07-03 17:34:22,338 Logging State information:
+2022-07-03 17:34:22,338 Current action: 0, Current word: weapons, current character: 0
+2022-07-03 17:34:22,338 Reward function (-1): action = 1, character = 23
+2022-07-03 17:34:22,354 Logging State information:
+2022-07-03 17:34:22,354 Current action: 0, Current word: weapons, current character: 1
+2022-07-03 17:34:22,354 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:22,370 Logging State information:
+2022-07-03 17:34:22,370 Current action: 0, Current word: weapons, current character: 2
+2022-07-03 17:34:22,370 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:22,386 Logging State information:
+2022-07-03 17:34:22,387 Current action: 0, Current word: weapons, current character: 3
+2022-07-03 17:34:22,387 Reward function (-1): action = 1, character = 16
+2022-07-03 17:34:22,402 Logging State information:
+2022-07-03 17:34:22,403 Current action: 0, Current word: weapons, current character: 4
+2022-07-03 17:34:22,403 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:22,419 Logging State information:
+2022-07-03 17:34:22,419 Current action: 0, Current word: weapons, current character: 5
+2022-07-03 17:34:22,419 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:22,436 Logging State information:
+2022-07-03 17:34:22,436 Current action: 0, Current word: weapons, current character: 6
+2022-07-03 17:34:22,437 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:22,437 [INFO] Moving to next word: Current word: weapons, (Current index): 65
+2022-07-03 17:34:22,454 Logging State information:
+2022-07-03 17:34:22,454 Current action: 0, Current word: of, current character: 0
+2022-07-03 17:34:22,454 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:22,470 Logging State information:
+2022-07-03 17:34:22,470 Current action: 0, Current word: of, current character: 1
+2022-07-03 17:34:22,470 Reward function (-1): action = 1, character = 6
+2022-07-03 17:34:22,470 [INFO] Moving to next word: Current word: of, (Current index): 66
+2022-07-03 17:34:22,487 Logging State information:
+2022-07-03 17:34:22,487 Current action: 0, Current word: mass, current character: 0
+2022-07-03 17:34:22,487 Reward function (-1): action = 1, character = 13
+2022-07-03 17:34:22,503 Logging State information:
+2022-07-03 17:34:22,503 Current action: 0, Current word: mass, current character: 1
+2022-07-03 17:34:22,503 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:22,519 Logging State information:
+2022-07-03 17:34:22,519 Current action: 0, Current word: mass, current character: 2
+2022-07-03 17:34:22,519 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:22,534 Logging State information:
+2022-07-03 17:34:22,534 Current action: 0, Current word: mass, current character: 3
+2022-07-03 17:34:22,534 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:22,534 [INFO] Moving to next word: Current word: mass, (Current index): 67
+2022-07-03 17:34:22,551 Logging State information:
+2022-07-03 17:34:22,551 Current action: 0, Current word: destruction:, current character: 0
+2022-07-03 17:34:22,551 Reward function (-1): action = 1, character = 4
+2022-07-03 17:34:22,567 Logging State information:
+2022-07-03 17:34:22,567 Current action: 0, Current word: destruction:, current character: 1
+2022-07-03 17:34:22,567 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:22,583 Logging State information:
+2022-07-03 17:34:22,583 Current action: 0, Current word: destruction:, current character: 2
+2022-07-03 17:34:22,583 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:22,598 Logging State information:
+2022-07-03 17:34:22,598 Current action: 0, Current word: destruction:, current character: 3
+2022-07-03 17:34:22,598 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:22,614 Logging State information:
+2022-07-03 17:34:22,614 Current action: 0, Current word: destruction:, current character: 4
+2022-07-03 17:34:22,614 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:22,629 Logging State information:
+2022-07-03 17:34:22,629 Current action: 0, Current word: destruction:, current character: 5
+2022-07-03 17:34:22,629 Reward function (-1): action = 1, character = 21
+2022-07-03 17:34:22,644 Logging State information:
+2022-07-03 17:34:22,644 Current action: 0, Current word: destruction:, current character: 6
+2022-07-03 17:34:22,644 Reward function (-1): action = 1, character = 3
+2022-07-03 17:34:22,659 Logging State information:
+2022-07-03 17:34:22,659 Current action: 0, Current word: destruction:, current character: 7
+2022-07-03 17:34:22,659 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:22,674 Logging State information:
+2022-07-03 17:34:22,674 Current action: 0, Current word: destruction:, current character: 8
+2022-07-03 17:34:22,674 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:22,689 Logging State information:
+2022-07-03 17:34:22,689 Current action: 0, Current word: destruction:, current character: 9
+2022-07-03 17:34:22,689 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:22,705 Logging State information:
+2022-07-03 17:34:22,705 Current action: 0, Current word: destruction:, current character: 10
+2022-07-03 17:34:22,705 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:22,720 Logging State information:
+2022-07-03 17:34:22,720 Current action: 0, Current word: destruction:, current character: 11
+2022-07-03 17:34:22,720 Reward function (-1): action = 1, character = -38
+2022-07-03 17:34:22,720 [INFO] Moving to next word: Current word: destruction:, (Current index): 68
+2022-07-03 17:34:22,737 Logging State information:
+2022-07-03 17:34:22,737 Current action: 0, Current word: then,, current character: 0
+2022-07-03 17:34:22,737 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:22,754 Logging State information:
+2022-07-03 17:34:22,754 Current action: 0, Current word: then,, current character: 1
+2022-07-03 17:34:22,754 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:22,774 Logging State information:
+2022-07-03 17:34:22,774 Current action: 0, Current word: then,, current character: 2
+2022-07-03 17:34:22,774 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:22,790 Logging State information:
+2022-07-03 17:34:22,790 Current action: 0, Current word: then,, current character: 3
+2022-07-03 17:34:22,790 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:22,806 Logging State information:
+2022-07-03 17:34:22,807 Current action: 0, Current word: then,, current character: 4
+2022-07-03 17:34:22,807 Reward function (-1): action = 1, character = -52
+2022-07-03 17:34:22,807 [INFO] Moving to next word: Current word: then,, (Current index): 69
+2022-07-03 17:34:22,824 Logging State information:
+2022-07-03 17:34:22,824 Current action: 0, Current word: the, current character: 0
+2022-07-03 17:34:22,824 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:22,839 Logging State information:
+2022-07-03 17:34:22,839 Current action: 0, Current word: the, current character: 1
+2022-07-03 17:34:22,839 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:22,855 Logging State information:
+2022-07-03 17:34:22,855 Current action: 0, Current word: the, current character: 2
+2022-07-03 17:34:22,855 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:22,855 [INFO] Moving to next word: Current word: the, (Current index): 70
+2022-07-03 17:34:22,872 Logging State information:
+2022-07-03 17:34:22,872 Current action: 0, Current word: cold, current character: 0
+2022-07-03 17:34:22,872 Reward function (-1): action = 1, character = 3
+2022-07-03 17:34:22,888 Logging State information:
+2022-07-03 17:34:22,888 Current action: 0, Current word: cold, current character: 1
+2022-07-03 17:34:22,888 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:22,904 Logging State information:
+2022-07-03 17:34:22,904 Current action: 0, Current word: cold, current character: 2
+2022-07-03 17:34:22,904 Reward function (-1): action = 1, character = 12
+2022-07-03 17:34:22,920 Logging State information:
+2022-07-03 17:34:22,920 Current action: 0, Current word: cold, current character: 3
+2022-07-03 17:34:22,920 Reward function (-1): action = 1, character = 4
+2022-07-03 17:34:22,920 [INFO] Moving to next word: Current word: cold, (Current index): 71
+2022-07-03 17:34:22,937 Logging State information:
+2022-07-03 17:34:22,937 Current action: 0, Current word: war, current character: 0
+2022-07-03 17:34:22,937 Reward function (-1): action = 1, character = 23
+2022-07-03 17:34:22,952 Logging State information:
+2022-07-03 17:34:22,953 Current action: 0, Current word: war, current character: 1
+2022-07-03 17:34:22,953 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:22,968 Logging State information:
+2022-07-03 17:34:22,968 Current action: 0, Current word: war, current character: 2
+2022-07-03 17:34:22,968 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:22,968 [INFO] Moving to next word: Current word: war, (Current index): 72
+2022-07-03 17:34:22,984 Logging State information:
+2022-07-03 17:34:22,984 Current action: 0, Current word: era, current character: 0
+2022-07-03 17:34:22,984 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:22,999 Logging State information:
+2022-07-03 17:34:22,999 Current action: 0, Current word: era, current character: 1
+2022-07-03 17:34:23,000 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:23,015 Logging State information:
+2022-07-03 17:34:23,015 Current action: 0, Current word: era, current character: 2
+2022-07-03 17:34:23,015 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:23,016 [INFO] Moving to next word: Current word: era, (Current index): 73
+2022-07-03 17:34:23,032 Logging State information:
+2022-07-03 17:34:23,032 Current action: 0, Current word: and, current character: 0
+2022-07-03 17:34:23,032 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:23,048 Logging State information:
+2022-07-03 17:34:23,048 Current action: 0, Current word: and, current character: 1
+2022-07-03 17:34:23,048 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:23,064 Logging State information:
+2022-07-03 17:34:23,064 Current action: 0, Current word: and, current character: 2
+2022-07-03 17:34:23,064 Reward function (-1): action = 1, character = 4
+2022-07-03 17:34:23,064 [INFO] Moving to next word: Current word: and, (Current index): 74
+2022-07-03 17:34:23,081 Logging State information:
+2022-07-03 17:34:23,081 Current action: 0, Current word: the, current character: 0
+2022-07-03 17:34:23,081 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:23,097 Logging State information:
+2022-07-03 17:34:23,097 Current action: 0, Current word: the, current character: 1
+2022-07-03 17:34:23,097 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:23,113 Logging State information:
+2022-07-03 17:34:23,113 Current action: 0, Current word: the, current character: 2
+2022-07-03 17:34:23,113 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:23,113 [INFO] Moving to next word: Current word: the, (Current index): 75
+2022-07-03 17:34:23,131 Logging State information:
+2022-07-03 17:34:23,131 Current action: 0, Current word: space, current character: 0
+2022-07-03 17:34:23,131 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:23,146 Logging State information:
+2022-07-03 17:34:23,147 Current action: 0, Current word: space, current character: 1
+2022-07-03 17:34:23,147 Reward function (-1): action = 1, character = 16
+2022-07-03 17:34:23,162 Logging State information:
+2022-07-03 17:34:23,163 Current action: 0, Current word: space, current character: 2
+2022-07-03 17:34:23,163 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:23,178 Logging State information:
+2022-07-03 17:34:23,178 Current action: 0, Current word: space, current character: 3
+2022-07-03 17:34:23,178 Reward function (-1): action = 1, character = 3
+2022-07-03 17:34:23,197 Logging State information:
+2022-07-03 17:34:23,197 Current action: 0, Current word: space, current character: 4
+2022-07-03 17:34:23,197 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:23,197 [INFO] Moving to next word: Current word: space, (Current index): 76
+2022-07-03 17:34:23,214 Logging State information:
+2022-07-03 17:34:23,214 Current action: 0, Current word: race, current character: 0
+2022-07-03 17:34:23,214 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:23,230 Logging State information:
+2022-07-03 17:34:23,230 Current action: 0, Current word: race, current character: 1
+2022-07-03 17:34:23,230 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:23,245 Logging State information:
+2022-07-03 17:34:23,245 Current action: 0, Current word: race, current character: 2
+2022-07-03 17:34:23,245 Reward function (-1): action = 1, character = 3
+2022-07-03 17:34:23,262 Logging State information:
+2022-07-03 17:34:23,262 Current action: 0, Current word: race, current character: 3
+2022-07-03 17:34:23,262 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:23,262 [INFO] Moving to next word: Current word: race, (Current index): 77
+2022-07-03 17:34:23,278 Logging State information:
+2022-07-03 17:34:23,278 Current action: 0, Current word: with, current character: 0
+2022-07-03 17:34:23,278 Reward function (-1): action = 1, character = 23
+2022-07-03 17:34:23,294 Logging State information:
+2022-07-03 17:34:23,294 Current action: 0, Current word: with, current character: 1
+2022-07-03 17:34:23,294 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:23,310 Logging State information:
+2022-07-03 17:34:23,310 Current action: 0, Current word: with, current character: 2
+2022-07-03 17:34:23,310 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:23,326 Logging State information:
+2022-07-03 17:34:23,326 Current action: 0, Current word: with, current character: 3
+2022-07-03 17:34:23,326 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:23,326 [INFO] Moving to next word: Current word: with, (Current index): 78
+2022-07-03 17:34:23,343 Logging State information:
+2022-07-03 17:34:23,343 Current action: 0, Current word: the, current character: 0
+2022-07-03 17:34:23,343 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:23,358 Logging State information:
+2022-07-03 17:34:23,359 Current action: 0, Current word: the, current character: 1
+2022-07-03 17:34:23,359 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:23,375 Logging State information:
+2022-07-03 17:34:23,375 Current action: 0, Current word: the, current character: 2
+2022-07-03 17:34:23,375 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:23,375 [INFO] Moving to next word: Current word: the, (Current index): 79
+2022-07-03 17:34:23,392 Logging State information:
+2022-07-03 17:34:23,392 Current action: 0, Current word: soviets, current character: 0
+2022-07-03 17:34:23,392 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:23,408 Logging State information:
+2022-07-03 17:34:23,408 Current action: 0, Current word: soviets, current character: 1
+2022-07-03 17:34:23,408 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:23,424 Logging State information:
+2022-07-03 17:34:23,424 Current action: 0, Current word: soviets, current character: 2
+2022-07-03 17:34:23,424 Reward function (-1): action = 1, character = 22
+2022-07-03 17:34:23,443 Logging State information:
+2022-07-03 17:34:23,443 Current action: 0, Current word: soviets, current character: 3
+2022-07-03 17:34:23,443 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:23,460 Logging State information:
+2022-07-03 17:34:23,460 Current action: 0, Current word: soviets, current character: 4
+2022-07-03 17:34:23,460 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:23,476 Logging State information:
+2022-07-03 17:34:23,476 Current action: 0, Current word: soviets, current character: 5
+2022-07-03 17:34:23,476 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:23,491 Logging State information:
+2022-07-03 17:34:23,491 Current action: 0, Current word: soviets, current character: 6
+2022-07-03 17:34:23,491 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:23,491 [INFO] Moving to next word: Current word: soviets, (Current index): 80
+2022-07-03 17:34:23,509 Logging State information:
+2022-07-03 17:34:23,509 Current action: 0, Current word: brought, current character: 0
+2022-07-03 17:34:23,509 Reward function (-1): action = 1, character = 2
+2022-07-03 17:34:23,525 Logging State information:
+2022-07-03 17:34:23,525 Current action: 0, Current word: brought, current character: 1
+2022-07-03 17:34:23,525 Reward function (-1): action = 1, character = 18
+2022-07-03 17:34:23,540 Logging State information:
+2022-07-03 17:34:23,540 Current action: 0, Current word: brought, current character: 2
+2022-07-03 17:34:23,540 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:23,556 Logging State information:
+2022-07-03 17:34:23,556 Current action: 0, Current word: brought, current character: 3
+2022-07-03 17:34:23,556 Reward function (-1): action = 1, character = 21
+2022-07-03 17:34:23,572 Logging State information:
+2022-07-03 17:34:23,572 Current action: 0, Current word: brought, current character: 4
+2022-07-03 17:34:23,572 Reward function (-1): action = 1, character = 7
+2022-07-03 17:34:23,589 Logging State information:
+2022-07-03 17:34:23,589 Current action: 0, Current word: brought, current character: 5
+2022-07-03 17:34:23,589 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:23,605 Logging State information:
+2022-07-03 17:34:23,605 Current action: 0, Current word: brought, current character: 6
+2022-07-03 17:34:23,605 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:23,605 [INFO] Moving to next word: Current word: brought, (Current index): 81
+2022-07-03 17:34:23,622 Logging State information:
+2022-07-03 17:34:23,622 Current action: 0, Current word: humanity, current character: 0
+2022-07-03 17:34:23,622 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:23,639 Logging State information:
+2022-07-03 17:34:23,639 Current action: 0, Current word: humanity, current character: 1
+2022-07-03 17:34:23,639 Reward function (-1): action = 1, character = 21
+2022-07-03 17:34:23,654 Logging State information:
+2022-07-03 17:34:23,654 Current action: 0, Current word: humanity, current character: 2
+2022-07-03 17:34:23,654 Reward function (-1): action = 1, character = 13
+2022-07-03 17:34:23,668 Logging State information:
+2022-07-03 17:34:23,668 Current action: 0, Current word: humanity, current character: 3
+2022-07-03 17:34:23,668 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:23,683 Logging State information:
+2022-07-03 17:34:23,683 Current action: 0, Current word: humanity, current character: 4
+2022-07-03 17:34:23,683 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:23,699 Logging State information:
+2022-07-03 17:34:23,700 Current action: 0, Current word: humanity, current character: 5
+2022-07-03 17:34:23,700 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:23,715 Logging State information:
+2022-07-03 17:34:23,715 Current action: 0, Current word: humanity, current character: 6
+2022-07-03 17:34:23,715 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:23,730 Logging State information:
+2022-07-03 17:34:23,730 Current action: 0, Current word: humanity, current character: 7
+2022-07-03 17:34:23,730 Reward function (-1): action = 1, character = 25
+2022-07-03 17:34:23,730 [INFO] Moving to next word: Current word: humanity, (Current index): 82
+2022-07-03 17:34:23,747 Logging State information:
+2022-07-03 17:34:23,747 Current action: 0, Current word: one, current character: 0
+2022-07-03 17:34:23,747 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:23,764 Logging State information:
+2022-07-03 17:34:23,764 Current action: 0, Current word: one, current character: 1
+2022-07-03 17:34:23,764 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:23,780 Logging State information:
+2022-07-03 17:34:23,781 Current action: 0, Current word: one, current character: 2
+2022-07-03 17:34:23,781 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:23,781 [INFO] Moving to next word: Current word: one, (Current index): 83
+2022-07-03 17:34:23,797 Logging State information:
+2022-07-03 17:34:23,797 Current action: 0, Current word: of, current character: 0
+2022-07-03 17:34:23,797 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:23,813 Logging State information:
+2022-07-03 17:34:23,813 Current action: 0, Current word: of, current character: 1
+2022-07-03 17:34:23,813 Reward function (-1): action = 1, character = 6
+2022-07-03 17:34:23,813 [INFO] Moving to next word: Current word: of, (Current index): 84
+2022-07-03 17:34:23,830 Logging State information:
+2022-07-03 17:34:23,830 Current action: 0, Current word: its, current character: 0
+2022-07-03 17:34:23,830 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:23,845 Logging State information:
+2022-07-03 17:34:23,845 Current action: 0, Current word: its, current character: 1
+2022-07-03 17:34:23,845 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:23,860 Logging State information:
+2022-07-03 17:34:23,860 Current action: 0, Current word: its, current character: 2
+2022-07-03 17:34:23,860 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:23,860 [INFO] Moving to next word: Current word: its, (Current index): 85
+2022-07-03 17:34:23,877 Logging State information:
+2022-07-03 17:34:23,877 Current action: 0, Current word: most, current character: 0
+2022-07-03 17:34:23,877 Reward function (-1): action = 1, character = 13
+2022-07-03 17:34:23,893 Logging State information:
+2022-07-03 17:34:23,893 Current action: 0, Current word: most, current character: 1
+2022-07-03 17:34:23,893 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:23,909 Logging State information:
+2022-07-03 17:34:23,909 Current action: 0, Current word: most, current character: 2
+2022-07-03 17:34:23,909 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:23,925 Logging State information:
+2022-07-03 17:34:23,925 Current action: 0, Current word: most, current character: 3
+2022-07-03 17:34:23,925 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:23,925 [INFO] Moving to next word: Current word: most, (Current index): 86
+2022-07-03 17:34:23,943 Logging State information:
+2022-07-03 17:34:23,943 Current action: 0, Current word: significant, current character: 0
+2022-07-03 17:34:23,943 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:23,959 Logging State information:
+2022-07-03 17:34:23,959 Current action: 0, Current word: significant, current character: 1
+2022-07-03 17:34:23,959 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:23,975 Logging State information:
+2022-07-03 17:34:23,975 Current action: 0, Current word: significant, current character: 2
+2022-07-03 17:34:23,975 Reward function (-1): action = 1, character = 7
+2022-07-03 17:34:23,991 Logging State information:
+2022-07-03 17:34:23,991 Current action: 0, Current word: significant, current character: 3
+2022-07-03 17:34:23,991 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:24,006 Logging State information:
+2022-07-03 17:34:24,006 Current action: 0, Current word: significant, current character: 4
+2022-07-03 17:34:24,006 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:24,022 Logging State information:
+2022-07-03 17:34:24,022 Current action: 0, Current word: significant, current character: 5
+2022-07-03 17:34:24,022 Reward function (-1): action = 1, character = 6
+2022-07-03 17:34:24,038 Logging State information:
+2022-07-03 17:34:24,038 Current action: 0, Current word: significant, current character: 6
+2022-07-03 17:34:24,038 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:24,053 Logging State information:
+2022-07-03 17:34:24,053 Current action: 0, Current word: significant, current character: 7
+2022-07-03 17:34:24,053 Reward function (-1): action = 1, character = 3
+2022-07-03 17:34:24,069 Logging State information:
+2022-07-03 17:34:24,069 Current action: 0, Current word: significant, current character: 8
+2022-07-03 17:34:24,069 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:24,084 Logging State information:
+2022-07-03 17:34:24,084 Current action: 0, Current word: significant, current character: 9
+2022-07-03 17:34:24,084 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:24,100 Logging State information:
+2022-07-03 17:34:24,100 Current action: 0, Current word: significant, current character: 10
+2022-07-03 17:34:24,100 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:24,100 [INFO] Moving to next word: Current word: significant, (Current index): 87
+2022-07-03 17:34:24,118 Logging State information:
+2022-07-03 17:34:24,118 Current action: 0, Current word: achievements ,, current character: 0
+2022-07-03 17:34:24,118 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:24,134 Logging State information:
+2022-07-03 17:34:24,134 Current action: 0, Current word: achievements ,, current character: 1
+2022-07-03 17:34:24,134 Reward function (-1): action = 1, character = 3
+2022-07-03 17:34:24,150 Logging State information:
+2022-07-03 17:34:24,150 Current action: 0, Current word: achievements ,, current character: 2
+2022-07-03 17:34:24,150 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:24,165 Logging State information:
+2022-07-03 17:34:24,166 Current action: 0, Current word: achievements ,, current character: 3
+2022-07-03 17:34:24,166 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:24,181 Logging State information:
+2022-07-03 17:34:24,181 Current action: 0, Current word: achievements ,, current character: 4
+2022-07-03 17:34:24,181 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:24,197 Logging State information:
+2022-07-03 17:34:24,197 Current action: 0, Current word: achievements ,, current character: 5
+2022-07-03 17:34:24,197 Reward function (-1): action = 1, character = 22
+2022-07-03 17:34:24,213 Logging State information:
+2022-07-03 17:34:24,213 Current action: 0, Current word: achievements ,, current character: 6
+2022-07-03 17:34:24,213 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:24,229 Logging State information:
+2022-07-03 17:34:24,229 Current action: 0, Current word: achievements ,, current character: 7
+2022-07-03 17:34:24,229 Reward function (-1): action = 1, character = 13
+2022-07-03 17:34:24,244 Logging State information:
+2022-07-03 17:34:24,244 Current action: 0, Current word: achievements ,, current character: 8
+2022-07-03 17:34:24,244 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:24,260 Logging State information:
+2022-07-03 17:34:24,260 Current action: 0, Current word: achievements ,, current character: 9
+2022-07-03 17:34:24,260 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:24,276 Logging State information:
+2022-07-03 17:34:24,276 Current action: 0, Current word: achievements ,, current character: 10
+2022-07-03 17:34:24,276 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:24,291 Logging State information:
+2022-07-03 17:34:24,292 Current action: 0, Current word: achievements ,, current character: 11
+2022-07-03 17:34:24,292 Reward function (-1): action = 1, character = 19
+2022-07-03 17:34:24,307 Logging State information:
+2022-07-03 17:34:24,307 Current action: 0, Current word: achievements ,, current character: 12
+2022-07-03 17:34:24,307 Reward function (-1): action = 1, character = -64
+2022-07-03 17:34:24,322 Logging State information:
+2022-07-03 17:34:24,322 Current action: 0, Current word: achievements ,, current character: 13
+2022-07-03 17:34:24,322 Reward function (-1): action = 1, character = -52
+2022-07-03 17:34:24,322 [INFO] Moving to next word: Current word: achievements ,, (Current index): 88
+2022-07-03 17:34:24,340 Logging State information:
+2022-07-03 17:34:24,340 Current action: 0, Current word: the, current character: 0
+2022-07-03 17:34:24,340 Reward function (-1): action = 1, character = 20
+2022-07-03 17:34:24,356 Logging State information:
+2022-07-03 17:34:24,356 Current action: 0, Current word: the, current character: 1
+2022-07-03 17:34:24,356 Reward function (-1): action = 1, character = 8
+2022-07-03 17:34:24,371 Logging State information:
+2022-07-03 17:34:24,371 Current action: 0, Current word: the, current character: 2
+2022-07-03 17:34:24,371 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:24,371 [INFO] Moving to next word: Current word: the, (Current index): 89
+2022-07-03 17:34:24,389 Logging State information:
+2022-07-03 17:34:24,389 Current action: 0, Current word: moon, current character: 0
+2022-07-03 17:34:24,389 Reward function (-1): action = 1, character = 13
+2022-07-03 17:34:24,405 Logging State information:
+2022-07-03 17:34:24,405 Current action: 0, Current word: moon, current character: 1
+2022-07-03 17:34:24,405 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:24,422 Logging State information:
+2022-07-03 17:34:24,422 Current action: 0, Current word: moon, current character: 2
+2022-07-03 17:34:24,422 Reward function (-1): action = 1, character = 15
+2022-07-03 17:34:24,443 Logging State information:
+2022-07-03 17:34:24,443 Current action: 0, Current word: moon, current character: 3
+2022-07-03 17:34:24,443 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:24,443 [INFO] Moving to next word: Current word: moon, (Current index): 90
+2022-07-03 17:34:24,459 Logging State information:
+2022-07-03 17:34:24,459 Current action: 0, Current word: landing:, current character: 0
+2022-07-03 17:34:24,459 Reward function (-1): action = 1, character = 12
+2022-07-03 17:34:24,475 Logging State information:
+2022-07-03 17:34:24,476 Current action: 0, Current word: landing:, current character: 1
+2022-07-03 17:34:24,476 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:24,491 Logging State information:
+2022-07-03 17:34:24,492 Current action: 0, Current word: landing:, current character: 2
+2022-07-03 17:34:24,492 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:24,508 Logging State information:
+2022-07-03 17:34:24,508 Current action: 0, Current word: landing:, current character: 3
+2022-07-03 17:34:24,508 Reward function (-1): action = 1, character = 4
+2022-07-03 17:34:24,524 Logging State information:
+2022-07-03 17:34:24,524 Current action: 0, Current word: landing:, current character: 4
+2022-07-03 17:34:24,524 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:24,540 Logging State information:
+2022-07-03 17:34:24,540 Current action: 0, Current word: landing:, current character: 5
+2022-07-03 17:34:24,540 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:24,556 Logging State information:
+2022-07-03 17:34:24,556 Current action: 0, Current word: landing:, current character: 6
+2022-07-03 17:34:24,556 Reward function (-1): action = 1, character = 7
+2022-07-03 17:34:24,571 Logging State information:
+2022-07-03 17:34:24,571 Current action: 0, Current word: landing:, current character: 7
+2022-07-03 17:34:24,571 Reward function (-1): action = 1, character = -38
+2022-07-03 17:34:24,571 [INFO] Moving to next word: Current word: landing:, (Current index): 91
+2022-07-03 17:34:24,588 Logging State information:
+2022-07-03 17:34:24,588 Current action: 0, Current word: finally;, current character: 0
+2022-07-03 17:34:24,588 Reward function (-1): action = 1, character = 6
+2022-07-03 17:34:24,604 Logging State information:
+2022-07-03 17:34:24,604 Current action: 0, Current word: finally;, current character: 1
+2022-07-03 17:34:24,604 Reward function (-1): action = 1, character = 9
+2022-07-03 17:34:24,620 Logging State information:
+2022-07-03 17:34:24,620 Current action: 0, Current word: finally;, current character: 2
+2022-07-03 17:34:24,620 Reward function (-1): action = 1, character = 14
+2022-07-03 17:34:24,637 Logging State information:
+2022-07-03 17:34:24,637 Current action: 0, Current word: finally;, current character: 3
+2022-07-03 17:34:24,637 Reward function (26): action = 1, character = 1
+2022-07-03 17:34:24,653 Logging State information:
+2022-07-03 17:34:24,653 Current action: 0, Current word: finally;, current character: 4
+2022-07-03 17:34:24,653 Reward function (-1): action = 1, character = 12
+2022-07-03 17:34:24,669 Logging State information:
+2022-07-03 17:34:24,669 Current action: 0, Current word: finally;, current character: 5
+2022-07-03 17:34:24,669 Reward function (-1): action = 1, character = 12
+2022-07-03 17:34:24,684 Logging State information:
+2022-07-03 17:34:24,684 Current action: 0, Current word: finally;, current character: 6
+2022-07-03 17:34:24,684 Reward function (-1): action = 1, character = 25
+2022-07-03 17:34:24,699 Logging State information:
+2022-07-03 17:34:24,700 Current action: 0, Current word: finally;, current character: 7
+2022-07-03 17:34:24,700 Reward function (-1): action = 1, character = -37
+2022-07-03 17:34:24,700 [INFO] Moving to next word: Current word: finally;, (Current index): 92
+2022-07-03 17:34:24,717 Logging State information:
+2022-07-03 17:34:24,718 Current action: 0, Current word: we, current character: 0
+2022-07-03 17:34:24,718 Reward function (-1): action = 1, character = 23
+2022-07-03 17:34:24,733 Logging State information:
+2022-07-03 17:34:24,733 Current action: 0, Current word: we, current character: 1
+2022-07-03 17:34:24,733 Reward function (-1): action = 1, character = 5
+2022-07-03 17:34:24,733 [INFO] Moving to next word: Current word: we, (Current index): 93
+2022-07-03 17:34:24,750 Logging State information:
+2022-07-03 17:34:24,750 Current action: 0, Current word: will, current character: 0
+2022-07-03 17:34:24,750 Reward function (-1): action = 1, character = 23

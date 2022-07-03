@@ -12,13 +12,27 @@ from rl.agents import DQNAgent
 from rl.policy import BoltzmannQPolicy
 from rl.memory import SequentialMemory
 from rl.core import Processor
+import logging
+# Create and configure logger
+logging.basicConfig(filename="Logs/newfile.log",
+                    format='%(asctime)s %(message)s',
+                    filemode='w')
+
+# Creating an object
+log = logging.getLogger()
+ 
+# Setting the threshold of logger to DEBUG
+log.setLevel(logging.DEBUG)
+ 
 
 def get_reward(action,text,index):
+    # convert text to integers
     text = [ord(x) - 96 for x in text]
     if action+1 == text[index]:
-        reward = 10
+        reward = 26
     else:
         reward = -1
+    log.info(f'Reward function ({reward}): action = {action+1}, character = {text[index]}')
     return reward
 
 def cleanup_text(text):
@@ -81,6 +95,7 @@ def preprocessing(img,winsize=21,winconstant=5,maxarea = 500.0):
     return thresh,boundRect
     
 def drawbbox(img,results):
+    log.info(f'Drawing boxes for {results[1]}')
     # Draw the bounding boxes on the (copied) input image:
     img = cv.cvtColor(img,cv.COLOR_GRAY2RGB)
     for bbox,_,_ in results:
@@ -90,7 +105,7 @@ def drawbbox(img,results):
 
 def ocr(img,langs,gpu):
     # OCR the input using easyocr
-    print('[INFO] OCR input image---')
+    log.info('[INFO] OCR input image---')
     reader = Reader(langs,gpu=gpu)
     results = reader.readtext(img,decoder='beamsearch',
                                 min_size=0,
@@ -99,6 +114,7 @@ def ocr(img,langs,gpu):
 
 def build_model(states,actions):
     # print(f"model: {states}")
+    log.info('Building Custom model')
     model = Sequential()
     model.add(Conv2D(32,(3,3), activation='relu',input_shape=states,data_format="channels_last"))
     model.add(MaxPooling2D(pool_size=(2,2)))
@@ -114,6 +130,7 @@ def build_model(states,actions):
     return model
 
 def transfer_model(states,action):
+    log.info('Building with transfer learned xception model')
     base_model = Xception(weights="imagenet", include_top=False, input_shape=states)
     base_model.trainable = False ## Not trainable weights
 
@@ -146,6 +163,7 @@ class CustomProcessor(Processor):
 processor = CustomProcessor()
 
 def build_agent(model, actions):
+    log.info('Building agent')
     policy = BoltzmannQPolicy()
     memory = SequentialMemory(limit=50000, window_length=1)
     dqn = DQNAgent(model=model, memory=memory, policy=policy,processor=processor,
