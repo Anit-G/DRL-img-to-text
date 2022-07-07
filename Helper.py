@@ -3,15 +3,6 @@ from platform import processor
 import numpy as np
 import cv2 as cv
 from easyocr import Reader
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Flatten, Conv2D, MaxPooling2D, Input
-from tensorflow.keras.applications.xception import Xception
-from tensorflow.keras.applications.xception import preprocess_input
-from tensorflow.keras.optimizers import Adam
-from rl.agents import DQNAgent
-from rl.policy import BoltzmannQPolicy
-from rl.memory import SequentialMemory
-from rl.core import Processor
 import logging
 # Create and configure logger
 logging.basicConfig(filename="Logs/newfile.log",
@@ -35,9 +26,9 @@ def get_reward(action,text,index):
     # convert text to integers
     text = [ord(x) - 96 for x in text]
     if action+1 == text[index]:
-        reward = 26
+        reward = 10
     else:
-        reward = -1
+        reward = -10
     log.info(f'Reward function ({reward}): action = {action+1}, character = {text[index]}')
     return reward
 
@@ -118,63 +109,3 @@ def ocr(img,langs,gpu):
                                 min_size=0,
                                 width_ths=0.01)
     return results
-
-def build_model(states,actions):
-    # print(f"model: {states}")
-    log.info('Building Custom model')
-    model = Sequential()
-    model.add(Conv2D(32,(3,3), activation='relu',input_shape=states,data_format="channels_last"))
-    model.add(MaxPooling2D(pool_size=(2,2)))
-    model.add(Conv2D(64,(3,3), activation='relu'))
-    model.add(MaxPooling2D(pool_size=(2,2)))
-    model.add(Conv2D(64,(3,3), activation='relu'))
-    model.add(MaxPooling2D(pool_size=(2,2)))
-    model.add(Flatten())
-    model.add(Dense(24, activation='relu'))
-    model.add(Dense(24, activation='relu'))
-    model.add(Dense(actions, activation='linear'))
-
-    return model
-
-def transfer_model(states,action):
-    log.info('Building with transfer learned xception model')
-    base_model = Xception(weights="imagenet", include_top=False, input_shape=states)
-    base_model.trainable = False ## Not trainable weights
-
-
-    flatten_layer = Flatten()
-    dense_layer_1 = Dense(30, activation='relu')
-    dense_layer_2 = Dense(30, activation='relu')
-    prediction_layer = Dense(action, activation='linear')
-
-
-    model = Sequential([
-        base_model,
-        flatten_layer,
-        dense_layer_1,
-        dense_layer_2,
-        prediction_layer
-    ])
-   
-    return model
-
-class CustomProcessor(Processor):
-    '''
-    acts as a coupling mechanism between the agent and the environment
-    '''
-    def process_state_batch(self, batch):
-        batch = np.array(batch, dtype=object)
-        batch = np.squeeze(batch,axis=1)
-        return batch
-
-processor = CustomProcessor()
-
-def build_agent(model, actions):
-    log.info('Building agent')
-    policy = BoltzmannQPolicy()
-    memory = SequentialMemory(limit=50000, window_length=1)
-    dqn = DQNAgent(model=model, memory=memory, policy=policy,processor=processor,
-                  nb_actions=actions, nb_steps_warmup=10, target_model_update=1e-2)
-    return dqn
-
-    

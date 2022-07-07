@@ -1,8 +1,10 @@
 import matplotlib.pyplot as plt
 from Helper import *
+from models import *
 from gym import Env
 from gym.spaces import Discrete, Box
 import random
+
 
 link = 'Resources/sample3.png'
 langs = ['en']
@@ -26,6 +28,7 @@ class pdfread(Env):
 		self.cindex = 0
 		self.c_results = 0
 		self.all_test_actions = []
+		self.current_action = 0
 		# draw the bbox and save image
 		bbox_img = drawbbox(self.img,self.results)
 		plt.imsave('box_img.png',bbox_img)
@@ -58,9 +61,12 @@ class pdfread(Env):
 			cropped_img = cv.adaptiveThreshold(img[tl[1]:br[1], tl[0]:br[0]],255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY, 21,5)
 			# cleanup the text in the word bounding box
 			text = cleanup_text(text)
-            
+			scale = min(in_shape[0]/cropped_img.shape[0],in_shape[1]/cropped_img.shape[1])
+			h = int(cropped_img.shape[0]*scale)
+			w = int(cropped_img.shape[1]*scale)
+			dim = (w,h)
 			# Bounding box for individual characters
-			cropped_img = pad(cv.resize(cropped_img,(cropped_img.shape[1],cropped_img.shape[0]),interpolation = cv.INTER_LINEAR),in_shape[0],in_shape[1])
+			cropped_img = pad(cv.resize(cropped_img,dim,interpolation = cv.INTER_LINEAR),in_shape[0],in_shape[1])
 		
 			return cropped_img,bbox,text
 
@@ -74,6 +80,7 @@ class pdfread(Env):
 		#saving action space:
 		if not Train:
 			self.all_test_actions.append(action)
+			self.current_action = action
 
 		w_img,wbbox,text = characterR(self.results,self.windex,self.img)	
 
@@ -97,7 +104,7 @@ class pdfread(Env):
 			log.info(f'[INFO] Moving to next word: Current word: {text}, (Current index): {self.windex}')
 			self.cindex = 0
 			self.windex+=1
-			plt.imsave(f"words/{text}.jpg",w_img)
+			cv.imwrite(f"words/{text}.png",w_img)
 		else:	
 			#update character index
 			self.cindex +=1
@@ -110,6 +117,9 @@ class pdfread(Env):
 	def render(self):
 		# i don't need to render any visual
 		# display action, current state (pic + text) and reward
+		print(self.current_action)
+		with open('render.txt','w') as f:
+			f.write(f'Current action: {self.current_action} Current index: {self.windex}')
 		pass
 
 	def reset(self):
@@ -132,22 +142,26 @@ if __name__ == "__main__":
 	print(f"Size of states: {states}")
 	print(f"Number of actions: {actions}")
 
-	model = transfer_model(states, actions)
+	model = LSTM_model(states, actions)
 	model.summary()
 
 	dqn = build_agent(model, actions)
 	dqn.compile(Adam(lr=1e-3), metrics=['mae'])
-	if Train:
-		# train model
-		dqn.fit(env, nb_steps=20000, visualize=False, verbose=1)
-		dqn.save_weights('Weights/dqn_weights.h5f',overwrite=True)
-		scores = dqn.test(env,nb_episodes=1,visualize=False)
-		print(np.mean(scores.history['episode_reward']))
-		# _ = dqn.test(env, nb_episodes=15, visualize=True)
-	else:
-		# load weights
-		print('Loading Weights')
-		dqn.load_weights('Weights/dqn_weights.h5f')
-		scores = dqn.test(env,nb_episodes=10,visualize=False)
-		print(np.mean(scores.history['episode_reward']))
 
+	dqn.fit(env, nb_steps=30000, visualize=False, verbose=1)
+	dqn.save_weights('Weights/dqn_weights1.h5f',overwrite=True)
+
+	# if Train:
+	# 	# train transfer model
+	# 	dqn.fit(env, nb_steps=30000, visualize=False, verbose=1)
+	# 	dqn.save_weights('Weights/dqn_weights1.h5f',overwrite=True)
+	# 	scores = dqn.test(env,nb_episodes=1,visualize=False)
+	# 	print(np.mean(scores.history['episode_reward']))
+	# 	# _ = dqn.test(env, nb_episodes=15, visualize=True)
+	# else:
+	# 	# load weights
+	# 	print('Loading Weights')
+	# 	dqn.load_weights('Weights/dqn_weights2.h5f') 
+	# 	scores = dqn.test(env,nb_episodes=10,visualize=False)
+	# 	print(np.mean(scores.history['episode_reward']))
+	# 	print(env.all_test_actions)
